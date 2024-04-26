@@ -1,0 +1,68 @@
+
+#####################################################################
+#            Welcome to MoShell 22.0u (LPA108514/1_R22U)            #
+#                Finn Magnusson, Jan Pettersson                     #
+#           http://newtran01.au.ao.ericsson.se/moshell              #
+#            Contact: Finn.Magnusson@ericsson.com                   #
+#                     Patrik.Ek@ericsson.com                        #
+#####################################################################
+      Copyright (c) Ericsson AB 2001-2022 - All Rights Reserved      
+
+[1;31mWARNING: [0mthe moshell version currently running is more than 75 weeks old.
+It is recommended to always use the latest released moshell version.
+Please download the latest version from http://newtran01.au.ao.ericsson.se/moshell
+
+Checking ip contact...OK
+
+HELP MENU            : h
+BASIC MO COMMANDS    : m
+OTHER MO COMMANDS    : n
+OTHER COMMANDS       : o
+PM COMMANDS          : p
+QUIT                 : q
+
+169.254.2.2> uv com_usernames=rbs
+
+com_usernames=rbs
+
+169.254.2.2> uv com_passwords=rbs
+
+com_passwords=rbs
+
+169.254.2.2> lt all
+
+240324-21:17:02 169.254.2.2 22.0u  stopfile=/tmp/74128
+Trying rbs's password from uservariable com_passwords ...OK
+
+$ssh_pid = 74177
+
+Connected to 169.254.2.2 (SubNetwork=ONRM_ROOT_MO,SubNetwork=Lab,MeContext=TLAB07X,ManagedElement=TLAB07X)
+
+Checking MOM version...MSRBS_NODE_MODEL_23.Q4_643.28133.125_0bc9
+Parsing MOM (cached): /home/rantechdev/moshell_logfiles/logs_moshell/tempfiles/20240324-211702_74093/MSRBS_NODE_MODEL_23.Q4_643.28133.125_0bc9.xml.cache.gz ...........................................................................................................................................................................................................Done.
+Using paramfile /home/rantechdev/moshell/commonjars/pm/PARAM_MSRBS_22.Q3.txt
+Parsing file /home/rantechdev/moshell/commonjars/pm/PARAM_MSRBS_22.Q3.txt ..............................................................................Done.
+Using imomdfile /home/rantechdev/moshell/commonjars/pm/IMOMD_MSRBS_21.Q3.txt
+Using imomfile /home/rantechdev/moshell/commonjars/pm/IMOM_MSRBS_21.Q3.txt
+Connected to 169.254.2.2 (SubNetwork=ONRM_ROOT_MO,SubNetwork=Lab,MeContext=TLAB07X,ManagedElement=TLAB07X)
+
+Last MO: 26376. Loaded 26376 MOs. Total: 26377 MOs.
+
+TLAB07X> alt
+
+240324-21:17:14 169.254.2.2 22.0u MSRBS_NODE_MODEL_23.Q4_643.28133.125_0bc9 stopfile=/tmp/74128
+
+Collecting Alarms...
+.
+====================================================================================================================
+Date & Time (UTC)   S Specific Problem                    MO (Cause/AdditionalInfo)
+====================================================================================================================
+2024-03-08 16:55:44 m Hatch Open                          FieldReplaceableUnit=BB-1 (Hatch cover open AI: ,UI:[{"PN":"Radio Processor 6353","SN":"E23D938601","PNR":"KDU1370095/11","PR":"R2A"}])
+2024-03-08 16:55:44 m SFP Not Present                     FieldReplaceableUnit=RRU-1-2,SfpModule=DATA_1 (No SFP or electrical cable plugged in (Mixed Mode with other ME).)
+2024-03-08 17:04:09 m External Link to GNodeB Failure     ENodeBFunction=1 (X2 link problem to one or several neighbouring gNodeBs. AI: PLMN ID-gNB ID 1 : 302720-3532361,PLMN ID-gNB ID 2 : 302720-3533751,PLMN ID-gNB ID 3 : 302720-3533750,PLMN ID-gNB ID 4 : 302720-3533749,PLMN ID-gNB ID 5 : 302720-3530156,PLMN ID-gNB ID 6 : 302720-3530152,PLMN ID-gNB ID 7 : 302720-3533748)
+2024-03-20 15:20:56 m Inconsistent Configuration          UlCompGroup=3050 (UlCompGroup contains SectorCarriers with different uplink carrier frequencies AI: compGroupId : 1117)
+>>> Total: 4 Alarms (0 Critical, 0 Major)
+
+TLAB07X> q!!
+Bye...
+]0; 

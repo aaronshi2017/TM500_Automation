@@ -1,0 +1,51 @@
+@baseURL = "http://127.0.0.1:5099/rtc/v2/tmas"
+@tmaPath713 = "C:/Program Files (x86)/VIAVI/TM500/5G NR - NLA 7.1.3/Test Mobile Application/"
+@tmaPath6230 = "C:/Program Files (x86)/VIAVI/TM500/5G NR - NLA 6.23.0/Test Mobile Application/"
+@campaignPath = "C:/Users/rante/Documents/VIAVI/TM500/5G NR/Test Mobile Application/NLA6.23.0 Rev1/MyCampaigns/5G-TestCases.xml"
+
+### open tma
+POST http://127.0.0.1:5099/rtc/v2/tmas
+Content-Type: application/json; 
+
+{
+    "TMA_TYPE": 1,
+    "TMA_PATH": {{tmaPath713}},
+    //"MCI_PORT": 5003,
+    //"ACI_PORT": 5030,
+    "TMA_PROFILE": "Default User",
+    "ENABLE_RCE": 1
+}
+
+### get tmaID
+GET http://127.0.0.1:5099/rtc/v2/tmas
+Content-Type: application/json;
+
+### get path
+GET http://127.0.0.1:5099/rtc/v2/tmas/0001
+Content-Type: application/json; charset=utf-8
+
+### schedule campaign
+POST http://127.0.0.1:5099/0001/campaigns/actions/schedule
+Content-Type: application/json; charset=utf-8
+
+{
+    "FILE_PATH": {{campaignPath}},
+    "ITERATION_COUNT": 1,
+    "ACTION_ON_EVENT": 0,
+    "DATE": "04/05/2024",
+    "TIME": "10:27:00",
+    "TEST_SELECTION_BY_INDEX": [0]
+}
+
+### shut down tma
+DELETE http://127.0.0.1:5099/rtc/v2/tmas/0001
+Content-Type: application/json; charset=utf-8
+
+
+### shut down tma
+DELETE  http://127.0.0.1:5099/rtc/v2/tmas
+Content-Type: application/json; charset=utf-8
+
+### get rtc version
+GET http://127.0.0.1:5099/rtc/v2/version
+Content-Type: application/json
