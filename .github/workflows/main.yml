@@ -1,0 +1,22 @@
+name: Auto Commit
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Commit changes
+      run: |
+        git config user.name 'aaronshi2017'
+        git config user.email 'shi.aaron@gmail.com'
+        git add .
+        git commit -m "Auto commit"
+        git push
