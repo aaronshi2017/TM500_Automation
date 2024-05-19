@@ -3,7 +3,7 @@ import logging,time,os
 from logging.handlers import TimedRotatingFileHandler
 from modules.class_supportFunctions import SupportFunctions
 from modules.class_pytestGenerate import PytestGeneration
-from modules.class_gitHubhandling import class_gitHubUpload
+import func_gitUpload
 from modules.class_moshellWSL import class_moshellWSL
 
 app = Flask(__name__)
@@ -51,6 +51,12 @@ def process_arguments(project,xmlPath,testcases,moshellcommand):
     if result:
         # github=class_gitHubUpload(project)
         # github.github_upload()
+        if func_gitUpload.sync_remote_with_local(project, remote_name='origin', branch_name='featurebranch'):
+            app.logger.info(f'Sync to Github successfully!')
+            print("Sync completed successfully.")
+        else:
+            print("An error occurred during sync.")
+            app.logger.info(f'An error occurred during Github sync!')
         return result
     else:
         return False
