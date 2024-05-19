@@ -1,0 +1,11 @@
+<re.Match object; span=(0, 26), match='npi_01_registration_LTEFDD'>
+<re.Match object; span=(0, 18), match='npi_10_SMS_LTE_FDD'>
+<re.Match object; span=(0, 22), match='npi_10_SMS_LTE_FDD_ESS'>
+<re.Match object; span=(0, 21), match='npi_15_IntraHO_LTEFDD'>
+<re.Match object; span=(0, 25), match='npi_15_IntraHO_LTEFDD_ESS'>
+['npi_01_registration_LTEFDD', 'npi_15_IntraHO_LTEFDD']
+{'FILE_PATH': 'C:\\Users\\rante\\Documents\\VIAVI\\TM500\\5G NR\\Test Mobile Application\\NLA7.4.3 Rev2\\MyCampaigns\\NPI_TC-01.xml', 'ITERATION_COUNT': 1, 'ACTION_ON_EVENT': 2, 'TESTS_SELECTION_BY_NAME': ['npi_01_registration_LTEFDD', 'npi_15_IntraHO_LTEFDD']}
+TMA campaign scheduling is successful
+TMA schedule ID is:
+	 NPI_TC-01_240519_052710694
+200  NPI_TC-01_240519_052710694
