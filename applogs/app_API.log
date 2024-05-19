@@ -1,0 +1,85 @@
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+127.0.0.1 - - [19/May/2024 05:25:39] "POST /testbuild HTTP/HTTP/1.1"
+************** Input Info*****************
+Project: Test_5-18-test
+XMLPath: C:\Users\rante\Documents\VIAVI\TM500\5G NR\Test Mobile Application\NLA7.4.3 Rev2\MyCampaigns\NPI_TC-01.xml
+TestCases: ['npi_01_registration_LTEFDD', 'npi_15_IntraHO_LTEFDD']
+Moshellcommand: st cell;alt;
+Error lines received while fetching: error: remote unpack failed: index-pack failed
+error: failed to push some refs to 'github.com:aaronshi2017/TM500_Automation_New.git'
+Pytest script generated successfully: test_Test_5-18-test_2024-05-19_05-25-40.py
+127.0.0.1 - - [19/May/2024 05:25:43] "POST /testbuild HTTP/HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2024 05:25:43] "POST /testbuild HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2024 08:00:52] "POST /testbuild HTTP/HTTP/1.1"
+************** Input Info*****************
+Project: Test_5-18-test
+XMLPath: C:\Users\rante\Documents\VIAVI\TM500\5G NR\Test Mobile Application\NLA7.4.3 Rev2\MyCampaigns\NPI_TC-01.xml
+TestCases: [0]
+Moshellcommand: st cell;alt;
+Error lines received while fetching: error: remote unpack failed: index-pack failed
+error: failed to push some refs to 'github.com:aaronshi2017/TM500_Automation_New.git'
+Pytest script generated successfully: test_Test_5-18-test_2024-05-19_08-00-52.py
+127.0.0.1 - - [19/May/2024 08:01:01] "POST /testbuild HTTP/HTTP/1.1" 200 -
+127.0.0.1 - - [19/May/2024 08:01:01] "POST /testbuild HTTP/1.1" 200 -

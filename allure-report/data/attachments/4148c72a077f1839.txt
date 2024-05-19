@@ -1,0 +1,4 @@
+TMA location query API call successful
+TMA location is:
+	C:/Users/rante/Desktop/TM500_SW_TMA/NLA_7_4_3/Test Mobile Application
+200 C:/Users/rante/Desktop/TM500_SW_TMA/NLA_7_4_3/Test Mobile Application
