@@ -1,0 +1,61 @@
+2024-05-19 10:11:59,422 - INFO - Check status
+2024-05-19 10:11:59,424 - INFO - Command: git status
+2024-05-19 10:11:59,424 - INFO - Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/old_test_Test_5-17_2024-05-18_07-11-10.py
+	deleted:    Project/old_test_Test_5-17_2024-05-18_08-49-26.py
+	deleted:    Project/old_test_Test_5-17_2024-05-18_10-41-25.py
+	deleted:    Project/old_test_Test_5-17_2024-05-18_10-42-32.py
+	deleted:    Project/old_test_Test_5-17_2024-05-18_10-46-51.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-18_10-59-37.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-18_11-24-45.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-18_11-53-40.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-18_12-01-31.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-18_22-35-41.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-19_05-25-40.py
+	deleted:    Project/old_test_Test_5-18_2024-05-18_10-49-55.py
+	deleted:    Project/old_test_Test_5-18_2024-05-18_10-53-06.py
+	modified:   applogs/app_API.log
+	deleted:    modules/func_gitUpload.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	func_gitUpload.py
+	output/github/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2024-05-19 13:55:16,177 - INFO - Starting sync process
+2024-05-19 13:55:16,178 - INFO - Command: git status
+2024-05-19 13:55:16,179 - INFO - Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/old_test_Test_5-17_2024-05-18_07-11-10.py
+	deleted:    Project/old_test_Test_5-17_2024-05-18_08-49-26.py
+	deleted:    Project/old_test_Test_5-17_2024-05-18_10-41-25.py
+	deleted:    Project/old_test_Test_5-17_2024-05-18_10-42-32.py
+	deleted:    Project/old_test_Test_5-17_2024-05-18_10-46-51.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-18_10-59-37.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-18_11-24-45.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-18_11-53-40.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-18_12-01-31.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-18_22-35-41.py
+	deleted:    Project/old_test_Test_5-18-test_2024-05-19_05-25-40.py
+	deleted:    Project/old_test_Test_5-18_2024-05-18_10-49-55.py
+	deleted:    Project/old_test_Test_5-18_2024-05-18_10-53-06.py
+	modified:   applogs/app_API.log
+	deleted:    modules/func_gitUpload.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	func_gitUpload.py
+	output/github/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2024-05-19 13:55:16,179 - INFO - Staging all changes...
