@@ -3,11 +3,11 @@ test_cases:
   - id: 1
     Project: "NPI_TC-01"
     XMLpath: "C:/Users/rante/Documents/VIAVI/TM500/5G NR/Test Mobile Application/NLA7.4.3 Rev2/MyCampaigns/NPI_TC-01.xml"
-    Test_cases: []
+    Test_cases: [0]
     Moshell: "alt;st cell"
 
   - id: 2
     Project: "NPI_TC-02"
     XMLpath: "C:/Users/rante/Documents/VIAVI/TM500/5G NR/Test Mobile Application/NLA7.4.3 Rev2/MyCampaigns/NPI_TC-02.xml"
-    Test_cases: []
+    Test_cases: [0]
     Moshell: "alt;st cell"

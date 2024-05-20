@@ -237,6 +237,7 @@ class class_TMA_API:
                     time.sleep(20)
                     result_code,result_text=self.check_Running_Campaign()
                 print("Campaign is complete:"+self.scheduled)
+            print("\n================Test case verdict if there is any =================\n")
             for key, value in self.testcaseResult.items():
                 print(f'Test Case:{key}, Result: {value}\n')
             return response.status_code,response.text
