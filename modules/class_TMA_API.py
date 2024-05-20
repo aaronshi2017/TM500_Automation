@@ -234,6 +234,7 @@ class class_TMA_API:
                             self.testcaseResult[captured_npi]=npi_result
                         else:
                             pass
+                    time.sleep(20)
                     result_code,result_text=self.check_Running_Campaign()
                 print("Campaign is complete:"+self.scheduled)
             for key, value in self.testcaseResult.items():
@@ -338,6 +339,7 @@ class class_TMA_API:
                 pattern_campaign=r'AUTOMATION_REPORT Complete'
                 while not supportfunction.find_message(result_text,pattern_campaign):
                     result_code,result_text=self.get_status_report_generation()
+                    time.sleep(20)
                 print("Report generation is complete:"+self.scheduled)
                 return result_code,result_text
         except requests.exceptions.RequestException as e:
