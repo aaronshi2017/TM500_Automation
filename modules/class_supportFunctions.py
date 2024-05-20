@@ -1,10 +1,26 @@
 import xml.etree.ElementTree as ET
-import os,re
+import os,re,glob
 
 class SupportFunctions:
     def __init__(self):
         pass
-
+    
+    def rename_test_files_in_project_folders(self):
+        # Recursively search for all subfolders named 'project'
+        root_dir=".."
+        for project_folder in glob.glob(os.path.join(root_dir, '**', 'Project'), recursive=True):
+            # Find all files in the 'project' subfolder that start with 'test'
+            for test_file in glob.glob(os.path.join(project_folder, 'test*')):
+                # Get the directory and file name
+                directory = os.path.dirname(test_file)
+                filename = os.path.basename(test_file)
+                # Construct the new file name
+                new_filename = 'old_' + filename
+                new_file_path = os.path.join(directory, new_filename)
+                # Rename the file
+                os.rename(test_file, new_file_path)
+                print(f'Renamed: {test_file} to {new_file_path}')
+    
     # Use following code to decide if this is a list of test names or test number 
     def check_list_type(self,lst):
         if isinstance(lst, list):

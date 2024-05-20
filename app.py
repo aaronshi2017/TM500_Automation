@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-import logging,time,os
+import logging,time,os,yaml
 from logging.handlers import TimedRotatingFileHandler
 from modules.class_supportFunctions import SupportFunctions
 from modules.class_pytestGenerate import PytestGeneration
@@ -34,6 +34,7 @@ if not app.logger.handlers:
     app.logger.addHandler(log_handler)
     app.logger.setLevel(logging.INFO)
     app.logger.propagate = False
+support_function=SupportFunctions()
 
 @app.before_request
 def log_request_info():
@@ -46,11 +47,13 @@ def log_response_info(response):
 
 def process_arguments(project,xmlPath,testcases,moshellcommand):
     pytestScript=PytestGeneration(project,xmlPath,testcases,moshellcommand)
+    support_function.rename_test_files_in_project_folders() #mark previous test files as old_
     result=pytestScript.generate_pytest_script()
 
     if result:
         # github=class_gitHubUpload(project)
         # github.github_upload()
+        # Upload the new files to Github 
         if func_gitUpload.sync_remote_with_local(project, remote_name='origin', branch_name='featurebranch'):
             app.logger.info(f'Sync to Github successfully!')
             print("Sync completed successfully.")
@@ -60,7 +63,48 @@ def process_arguments(project,xmlPath,testcases,moshellcommand):
         return result
     else:
         return False
+
+def read_yaml(file_path):
+    with open(file_path, 'r') as file:
+        try:
+            config = yaml.safe_load(file)
+            return config
+        except yaml.YAMLError as exc:
+            print(f"Error reading YAML file: {exc}")
+            return None
     
+@app.route('/yaml',methods=['POST'])
+def yaml_handle():
+    if not request.json:
+        return jsonify({"error": "No JSON data provided"}), 400
+    
+    data = request.get_json()
+    app.logger.info(f'Yaml test case files: {data}')
+    yamlfile = data.get('Yaml')
+    wslYamlfile=support_function.windows_to_wsl_path(yamlfile)
+    config=read_yaml(wslYamlfile)
+    if config:
+        support_function.rename_test_files_in_project_folders() #mark previous test files as old_
+        for test_case in config['test_cases']:
+            Project=test_case['Project']
+            XMLpath=test_case['XMLpath']
+            Testcase=test_case['Test_cases']
+            Moshell=test_case['Moshell']
+            pytestScript=PytestGeneration(Project,XMLpath,Testcase,Moshell)
+            result=pytestScript.generate_pytest_script()
+        if func_gitUpload.sync_remote_with_local("Yaml", remote_name='origin', branch_name='featurebranch'):
+            app.logger.info(f'Sync to Github successfully!')
+            print("Sync completed successfully.")
+        else:
+            print("An error occurred during sync.")
+            app.logger.info(f'An error occurred during Github sync!')
+            return jsonify({'error': 'Yaml file sync to Github failed!'}),400
+        return jsonify({'result': 'Yaml file processed!'})
+    else:
+        app.logger.info(f'Yaml file validation has error: {data}')
+        return jsonify({"error": "Yaml file validation error!"}), 400 
+
+
 @app.route('/moshell',methods=['POST'])
 def moshell():
     if not request.json:
@@ -86,7 +130,7 @@ def moshell():
 @app.route('/testbuild', methods=['POST'])
 def api():
 
-    supportFunction=SupportFunctions()
+    # supportFunction=SupportFunctions()
 
     # Check if the request contains JSON data
     if not request.json:
@@ -108,14 +152,14 @@ def api():
     if type(project) != str:
         return jsonify({"error": "Invalid Project Name!"}), 400
     
-    WSLpath=supportFunction.windows_to_wsl_path(XMLpath)
+    WSLpath=support_function.windows_to_wsl_path(XMLpath)
     
-    XMLpath_validation, XMLpath_result=supportFunction.is_valid_xml_file(WSLpath)
+    XMLpath_validation, XMLpath_result=support_function.is_valid_xml_file(WSLpath)
     if not XMLpath_validation:
         app.logger.info(f'XML path validation failed: {XMLpath_result}')
         return jsonify({"error": XMLpath_result}), 400 
 
-    listtype=supportFunction.check_list_type(testcases)
+    listtype=support_function.check_list_type(testcases)
     if not (listtype=="List of numbers" or listtype=="List of strings" or listtype=="Empty List"):
         app.logger.info(f'Test cases are not a list of valid test case string: {listtype}')
         return jsonify({"error": listtype}), 400 

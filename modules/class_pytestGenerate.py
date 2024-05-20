@@ -13,21 +13,21 @@ class PytestGeneration:
         self.testcases=testcases
         self.moshellcommand=moshellcommand
     
-    def rename_test_files_in_project_folders(self):
-        # Recursively search for all subfolders named 'project'
-        root_dir=".."
-        for project_folder in glob.glob(os.path.join(root_dir, '**', 'Project'), recursive=True):
-            # Find all files in the 'project' subfolder that start with 'test'
-            for test_file in glob.glob(os.path.join(project_folder, 'test*')):
-                # Get the directory and file name
-                directory = os.path.dirname(test_file)
-                filename = os.path.basename(test_file)
-                # Construct the new file name
-                new_filename = 'old_' + filename
-                new_file_path = os.path.join(directory, new_filename)
-                # Rename the file
-                os.rename(test_file, new_file_path)
-                print(f'Renamed: {test_file} to {new_file_path}')
+    # def rename_test_files_in_project_folders(self):
+    #     # Recursively search for all subfolders named 'project'
+    #     root_dir=".."
+    #     for project_folder in glob.glob(os.path.join(root_dir, '**', 'Project'), recursive=True):
+    #         # Find all files in the 'project' subfolder that start with 'test'
+    #         for test_file in glob.glob(os.path.join(project_folder, 'test*')):
+    #             # Get the directory and file name
+    #             directory = os.path.dirname(test_file)
+    #             filename = os.path.basename(test_file)
+    #             # Construct the new file name
+    #             new_filename = 'old_' + filename
+    #             new_file_path = os.path.join(directory, new_filename)
+    #             # Rename the file
+    #             os.rename(test_file, new_file_path)
+    #             print(f'Renamed: {test_file} to {new_file_path}')
 
     def generate_pytest_script(self):
         template="""
@@ -129,7 +129,7 @@ def test_step9_update_report_to_database(TMA_API):
         # Define the relative path to subfolder1 from the script's location
         relative_path_to_subfolder1 = os.path.join(base_dir, '../Project')
         file_path = os.path.join(relative_path_to_subfolder1, testname)
-        self.rename_test_files_in_project_folders()
+        # self.rename_test_files_in_project_folders()
         try:
             with open(file_path, 'w') as f:
                 f.write(script_content)        
