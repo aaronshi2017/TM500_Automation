@@ -1,63 +1,4 @@
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
-127.0.0.1 - - [20/May/2024 07:16:41] "POST /yaml HTTP/HTTP/1.1"
+127.0.0.1 - - [21/May/2024 07:30:22] "POST /yaml HTTP/HTTP/1.1"
 Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
 Starting sync process
 Command: git status
@@ -67,22 +8,17 @@ Your branch is up to date with 'origin/featurebranch'.
 Changes not staged for commit:
   (use "git add/rm <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/test_NPI_TC-01_2024-05-19_23-42-24.py
-	deleted:    Project/test_NPI_TC-02_2024-05-19_23-42-24.py
-	modified:   YAML/testcases.yaml
+	deleted:    Project/test_NPI_TC-01_2024-05-20_07-16-41.py
+	deleted:    Project/test_NPI_TC-02_2024-05-20_07-16-41.py
 	modified:   applogs/app_API.log
-	modified:   modules/__pycache__/class_TMA_API.cpython-310.pyc
-	modified:   modules/class_TMA_API.py
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-	Project/__pycache__/test_NPI_TC-01_2024-05-19_23-42-24.cpython-310-pytest-8.2.0.pyc
-	Project/__pycache__/test_NPI_TC-02_2024-05-19_23-42-24.cpython-310-pytest-8.2.0.pyc
-	Project/old_test_NPI_TC-01_2024-05-19_23-42-24.py
-	Project/old_test_NPI_TC-02_2024-05-19_23-42-24.py
-	Project/test_NPI_TC-01_2024-05-20_07-16-41.py
-	Project/test_NPI_TC-02_2024-05-20_07-16-41.py
-	applogs/app_API.log.2024-05-19
+	Project/old_test_NPI_TC-01_2024-05-20_07-16-41.py
+	Project/old_test_NPI_TC-02_2024-05-20_07-16-41.py
+	Project/test_NPI_TC-01_2024-05-21_07-30-22.py
+	Project/test_NPI_TC-02_2024-05-21_07-30-22.py
+	applogs/app_API.log.2024-05-20
 
 no changes added to commit (use "git add" and/or "git commit -a")
 Staging all changes...

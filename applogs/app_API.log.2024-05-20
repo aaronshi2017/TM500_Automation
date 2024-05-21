@@ -1,0 +1,109 @@
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+127.0.0.1 - - [20/May/2024 07:16:41] "POST /yaml HTTP/HTTP/1.1"
+Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
+Starting sync process
+Command: git status
+Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/test_NPI_TC-01_2024-05-19_23-42-24.py
+	deleted:    Project/test_NPI_TC-02_2024-05-19_23-42-24.py
+	modified:   YAML/testcases.yaml
+	modified:   applogs/app_API.log
+	modified:   modules/__pycache__/class_TMA_API.cpython-310.pyc
+	modified:   modules/class_TMA_API.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Project/__pycache__/test_NPI_TC-01_2024-05-19_23-42-24.cpython-310-pytest-8.2.0.pyc
+	Project/__pycache__/test_NPI_TC-02_2024-05-19_23-42-24.cpython-310-pytest-8.2.0.pyc
+	Project/old_test_NPI_TC-01_2024-05-19_23-42-24.py
+	Project/old_test_NPI_TC-02_2024-05-19_23-42-24.py
+	Project/test_NPI_TC-01_2024-05-20_07-16-41.py
+	Project/test_NPI_TC-02_2024-05-20_07-16-41.py
+	applogs/app_API.log.2024-05-19
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Staging all changes...
+Command: git add .
+Output: 
+Committing changes...
+Command: git commit -m "Commit by Yaml"
+Output: [featurebranch 2358c51] Commit by Yaml
+ 11 files changed, 264 insertions(+), 844 deletions(-)
+ create mode 100644 Project/__pycache__/test_NPI_TC-01_2024-05-19_23-42-24.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_NPI_TC-02_2024-05-19_23-42-24.cpython-310-pytest-8.2.0.pyc
+ rename Project/{test_NPI_TC-01_2024-05-19_23-42-24.py => old_test_NPI_TC-01_2024-05-19_23-42-24.py} (100%)
+ rename Project/{test_NPI_TC-02_2024-05-19_23-42-24.py => old_test_NPI_TC-02_2024-05-19_23-42-24.py} (100%)
+ create mode 100644 Project/test_NPI_TC-01_2024-05-20_07-16-41.py
+ create mode 100644 Project/test_NPI_TC-02_2024-05-20_07-16-41.py
+ rewrite applogs/app_API.log (91%)
+ create mode 100644 applogs/app_API.log.2024-05-19
+Pushing changes to remote...
+Command: git push -u origin featurebranch
+Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
+Remote repository is now in sync with local.
+Sync to Github successfully!
+127.0.0.1 - - [20/May/2024 07:16:42] "POST /yaml HTTP/HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2024 07:16:42] "POST /yaml HTTP/1.1" 200 -
