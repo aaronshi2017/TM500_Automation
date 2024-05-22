@@ -2,7 +2,7 @@ import requests
 import xml.etree.ElementTree as ET
 import os, time, json, re
 from datetime import datetime
-from .class_supportFunctions import SupportFunctions
+from class_supportFunctions import SupportFunctions
 
 # version 2.0 put under folder Project 
 class class_TMA_API:
@@ -144,20 +144,26 @@ class class_TMA_API:
         listCheckResult=supportfunction.check_list_type(testcaselist)
         jsonData={}
         if listCheckResult=="List of strings": # Schedule per Name 
-            print(testcaselist)
+            print(f"Have scheduled following test cases: {testcaselist}")
             for item in testcaselist:
+                print(f"{item} is added to the test list!")
                 self.testcaseResult[item]="No result"
             if not len(self.testcaseResult.keys())==len(testcaselist):
                 return self.error_code,"Input test case is not matching campaign XML test cases!"
             jsonData = {"FILE_PATH": campaignPath,"ITERATION_COUNT": 1,"ACTION_ON_EVENT": 2, "TESTS_SELECTION_BY_NAME":testcaselist}
         elif listCheckResult=="List of numbers": # Schedule per index
+            print(f"Have scheduled following test cases: {testcaselist}")
             for item in testcaselist:
-                self.testcaseResult[supportfunction.find_key_by_value(self.testcaseIndex,item)]="No result"
+                key=supportfunction.find_key_by_value(self.testcaseIndex,item)
+                print(f"{key} is added to the test list!")
+                self.testcaseResult[key]="No result"
             if not len(self.testcaseResult.keys())==len(testcaselist):
                 return self.error_code,"Input test case is not matching campaign XML test cases!"
             jsonData = {"FILE_PATH": campaignPath,"ITERATION_COUNT": 1,"ACTION_ON_EVENT": 2, "TESTS_SELECTION_BY_INDEX":testcaselist}
         elif listCheckResult=="Empty List": # Schedule whole campaign 
+            print(f"Have scheduled whole campaign's test cases!")
             for item in self.testcaseIndex.keys():
+                print(f"{item} is added to the test list!")
                 self.testcaseResult[item]="No result"
             jsonData = {"FILE_PATH": campaignPath,"ITERATION_COUNT": 1,"ACTION_ON_EVENT": 2}
             # adding the XML parse
@@ -434,44 +440,18 @@ class class_TMA_API:
 if __name__ == "__main__":
     basictest=class_TMA_API()
     # Test case1==================>
-    # print(basictest.close_TMA())
-    # print(basictest.open_TMA())
-    # time.sleep(10)
-    # print(basictest.check_TMA_Status())
-    # print(basictest.check_TMA_location())
-    # path2=r"C:\Users\rante\Documents\VIAVI\TM500\5G NR\Test Mobile Application\NLA6.23.0 Rev5\MyCampaigns\5G-TestCases.xml"
-    # path1=r"C:\TMA_Script\aaron_NSA - B7-N2.xml"
-    # testcase1=[1,2]
-    # testcase2=["MultiSlice","1UE-UDP"]
-    # testcase3=["1UE-UDP"]
-    # print(basictest.is_valid_xml_file(basictest.windows_to_wsl_path(path2)))
-    # print(basictest.schedule_campaign(path2,testcase1))
-    # # print(basictest.run_campaign_to_end())
-    # print(basictest.run_campaign())
-    # time.sleep(60)
-    # print(basictest.check_Running_Campaign())
-    # print(basictest.stop_Running_Campaign())
-    # print(basictest.schedule_campaign(path2,testcase2))
-    # # print(basictest.run_campaign_to_end())
-    # print(basictest.run_campaign())
-    # time.sleep(60)
-    # print(basictest.check_Running_Campaign())
-    # print(basictest.stop_Running_Campaign())
-    # print(basictest.schedule_campaign(path2,testcase3))
-    # # print(basictest.run_campaign_to_end())
-    # print(basictest.run_campaign())
-    # time.sleep(60)
-    # print(basictest.check_Running_Campaign())
-    # print(basictest.stop_Running_Campaign())
-    # print(basictest.generate_report_to_end())
-    # print(basictest.schedule_campaign(path,testcase2))
-    # print(basictest.schedule_campaign(path))
-    # # print(basictest.is_valid_xml_file("/mnt/c/Users/rante/Documents/VIAVI/TM500/5G NR/Test Mobile Application/NLA7.4.3 Rev2/MyCampaigns/NPI_TC-06.xml"))
-    # # print(basictest.schedule_campaign("/mnt/c/Users/rante/Documents/VIAVI/TM500/5G NR/Test Mobile Application/NLA7.4.3 Rev2/MyCampaigns/NPI_TC-06.xml",[0,1]))
-    # # Test case2 ========================>
-    # path2=r"C:\Users\rante\Documents\VIAVI\TM500\5G NR\Test Mobile Application\NLA6.23.0 Rev5\MyCampaigns\5G-TestCases.xml"
-    # testcase2=["MultiSlice","1UE-UDP"]
-    # print(basictest.schedule_campaign_new(path2,testcase2))
-
+    print(basictest.close_TMA())
+    print(basictest.open_TMA())
+    time.sleep(10)
+    print(basictest.check_TMA_Status())
+    print(basictest.check_TMA_location())
+    path2=r"C:\Users\rante\Documents\VIAVI\TM500\5G NR\Test Mobile Application\NLA6.23.0 Rev5\MyCampaigns\5G-TestCases.xml"
+    path1=r"D:\rApps\datasets\TM500\05_Campaign\tm_session_01.xml"
+    testcase1=[1,2]
+    testcase2=["MultiSlice","1UE-UDP"]
+    testcase3=[]
+    print(basictest.schedule_campaign(path1,testcase3))
+    print(basictest.run_campaign_to_end())
+    print(basictest.generate_report_to_end())
     # Test case 3=========================>
-    print(basictest.send_to_Database("Aaron_Test4","240509_114618_session",False))
+    # print(basictest.send_to_Database("Aaron_Test4","240509_114618_session",False))

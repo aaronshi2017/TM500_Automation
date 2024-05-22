@@ -84,7 +84,8 @@ def yaml_handle():
     wslYamlfile=support_function.windows_to_wsl_path(yamlfile)
     config=read_yaml(wslYamlfile)
     if config:
-        support_function.rename_test_files_in_project_folders() #mark previous test files as old_
+        support_function.rename_test_files_in_project_folders() #mark previous test files as archived_
+        support_function.savefile_YAML(wslYamlfile)
         for test_case in config['test_cases']:
             Project=test_case['Project']
             XMLpath=test_case['XMLpath']

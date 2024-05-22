@@ -44,7 +44,7 @@ def test_step5_check_TMA_location(TMA_API):
     assert result1==200
 
 def test_step6_schedule_campaign(TMA_API):
-    path=r"C:/Users/rante/Documents/VIAVI/TM500/5G NR/Test Mobile Application/NLA7.4.3 Rev2/MyCampaigns/NPI_TC-02.xml"
+    path=r"D:/rApps/datasets/TM500/05_Campaign/npi_b7_20Mhz.xml"
     testcase=[]
     result1,result2=TMA_API.schedule_campaign(path,testcase)
     print(result1,result2)
@@ -76,7 +76,7 @@ def test_step8_generate_report_to_end(TMA_API):
 
 def test_step9_update_report_to_database(TMA_API):
     if finalverdict=="PASS":
-        result1, result2 = TMA_API.send_to_Database("NPI_TC-02",sessionName,False)
+        result1, result2 = TMA_API.send_to_Database("npi_b7_20Mhz",sessionName,False)
         print(result1,result2)
         assert result1 == 200
     else:

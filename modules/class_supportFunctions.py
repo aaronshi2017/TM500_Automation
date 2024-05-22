@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
-import os,re,glob
+import os,re,glob,shutil
+from datetime import datetime
 
 class SupportFunctions:
     def __init__(self):
@@ -15,21 +16,29 @@ class SupportFunctions:
                 directory = os.path.dirname(test_file)
                 filename = os.path.basename(test_file)
                 # Construct the new file name
-                new_filename = 'old_' + filename
+                new_filename = 'archived_' + filename
                 new_file_path = os.path.join(directory, new_filename)
                 # Rename the file
                 os.rename(test_file, new_file_path)
                 print(f'Renamed: {test_file} to {new_file_path}')
     
+    def savefile_YAML(self,source_path):
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        yaml_file=os.path.basename(source_path)
+        newfile="archive_"+timestamp+"_"+yaml_file
+        dest_path="./YAML/"+newfile
+        shutil.copy(source_path,dest_path)
+        print("Yaml file is saved!")
+    
     # Use following code to decide if this is a list of test names or test number 
-    def check_list_type(self,lst):
+    def check_list_type(self, lst):
         if isinstance(lst, list):
-            if all(isinstance(item, (int)) for item in lst):
+            if len(lst) == 0:
+                return "Empty List"
+            elif all(isinstance(item, int) for item in lst):
                 return "List of numbers"
             elif all(isinstance(item, str) for item in lst):
                 return "List of strings"
-            elif len(lst)==0:
-                return "Empty List"
             else:
                 return "Mixed type list"
         else:
@@ -83,21 +92,26 @@ class SupportFunctions:
         # Load and parse the XML file
         tree = ET.parse(file_path)
         root = tree.getroot()
+        # Find all occurrences of <testName> tags and store their values in a dictionary
+        test_names = {}
+        for index, test_name_element in enumerate(root.findall('.//testName')):
+            test_names[test_name_element.text]=index
+        return test_names
+
+        # # Regular expression pattern to match strings starting with "npi_"
+        # pattern = re.compile(r'npi_\S+')
         
-        # Regular expression pattern to match strings starting with "npi_"
-        pattern = re.compile(r'npi_\S+')
+        # testcase_dict={}
         
-        testcase_dict={}
-        
-        i=0
-        # Find all <testName> elements and apply the regex
-        for testName in root.findall('.//testName'):
-            match = pattern.search(testName.text)
-            if match:
-                testcase_dict[match.group()]=i
-                i+=1
-                print(match)
-        return testcase_dict
+        # i=0
+        # # Find all <testName> elements and apply the regex
+        # for testName in root.findall('.//testName'):
+        #     match = pattern.search(testName.text)
+        #     if match:
+        #         testcase_dict[match.group()]=i
+        #         i+=1
+        #         print(match)
+        # return testcase_dict
 
 if __name__ == "__main__":
         # Example input values
