@@ -40,3 +40,55 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 Staging all changes...
+Command: git add .
+Output: 
+Committing changes...
+Command: git commit -m "Commit by Yaml"
+Output: [featurebranch f4bf2a2] Commit by Yaml
+ 14 files changed, 547 insertions(+), 281 deletions(-)
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest1_2024-05-22_10-47-57.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest2_2024-05-22_10-47-57.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest_2024-05-22_10-47-57.cpython-310-pytest-8.2.0.pyc
+ rename Project/{test_NPI_PilotTest1_2024-05-22_10-47-57.py => archived_test_NPI_PilotTest1_2024-05-22_10-47-57.py} (100%)
+ rename Project/{test_NPI_PilotTest2_2024-05-22_10-47-57.py => archived_test_NPI_PilotTest2_2024-05-22_10-47-57.py} (100%)
+ rename Project/{test_NPI_PilotTest_2024-05-22_10-47-57.py => archived_test_NPI_PilotTest_2024-05-22_10-47-57.py} (100%)
+ create mode 100644 Project/test_NPI_PilotTest1_2024-05-22_11-25-55.py
+ create mode 100644 Project/test_NPI_PilotTest2_2024-05-22_11-25-55.py
+ create mode 100644 Project/test_NPI_PilotTest3_2024-05-22_11-25-55.py
+ create mode 100755 YAML/archive_2024-05-22_11-25-55_NPI_PilotTest.yaml
+ rewrite applogs/app_API.log (96%)
+ copy applogs/{app_API.log => app_API.log.2024-05-21} (53%)
+Pushing changes to remote...
+Command: git push -u origin featurebranch
+Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
+Remote repository is now in sync with local.
+Sync to Github successfully!
+127.0.0.1 - - [22/May/2024 11:25:56] "POST /yaml HTTP/HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2024 11:25:56] "POST /yaml HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2024 14:20:52] "POST /yaml HTTP/HTTP/1.1"
+Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'}
+Starting sync process
+Command: git status
+Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/test_NPI_PilotTest1_2024-05-22_11-25-55.py
+	deleted:    Project/test_NPI_PilotTest2_2024-05-22_11-25-55.py
+	deleted:    Project/test_NPI_PilotTest3_2024-05-22_11-25-55.py
+	modified:   applogs/app_API.log
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Project/archived_test_NPI_PilotTest1_2024-05-22_11-25-55.py
+	Project/archived_test_NPI_PilotTest2_2024-05-22_11-25-55.py
+	Project/archived_test_NPI_PilotTest3_2024-05-22_11-25-55.py
+	Project/test_NPI_PilotTest1_2024-05-22_14-20-53.py
+	Project/test_NPI_PilotTest2_2024-05-22_14-20-53.py
+	Project/test_NPI_PilotTest3_2024-05-22_14-20-53.py
+	YAML/archive_2024-05-22_14-20-52_NPI_PilotTest.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Staging all changes...
