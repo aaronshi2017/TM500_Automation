@@ -1,8 +1,215 @@
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
-127.0.0.1 - - [21/May/2024 11:29:06] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
+127.0.0.1 - - [22/May/2024 10:43:48] "POST /moshell HTTP/HTTP/1.1"
+127.0.0.1 - - [22/May/2024 10:43:48] "POST /moshell HTTP/HTTP/1.1" 400 -
+127.0.0.1 - - [22/May/2024 10:43:48] "[31m[1mPOST /moshell HTTP/1.1[0m" 400 -
+127.0.0.1 - - [22/May/2024 10:44:08] "POST /moshell HTTP/HTTP/1.1"
+moshell deb TLAB07X7F1D;get TLAB07X7F1D state;get TLAB07X7F1D arfcn|channelbandwidth|physicalLayerCellId$|configuredmaxtxpower;altk;bl TLAB07X7F1D;setm EUtranCellFDD puschPwrOffset256qam 8 ul256QamEnabled true;setm TLAB07X7F1D dlChannelBandwidth 20000  ulChannelBandwidth 20000;deb TLAB07X7F1D
+************** Moshell Command Execution *****************
+
+#####################################################################
+#            Welcome to MoShell 22.0u (LPA108514/1_R22U)            #
+#                Finn Magnusson, Jan Pettersson                     #
+#           http://newtran01.au.ao.ericsson.se/moshell              #
+#            Contact: Finn.Magnusson@ericsson.com                   #
+#                     Patrik.Ek@ericsson.com                        #
+#####################################################################
+      Copyright (c) Ericsson AB 2001-2022 - All Rights Reserved      
+
+[1;31mWARNING: [0mthe moshell version currently running is more than 83 weeks old.
+It is recommended to always use the latest released moshell version.
+Please download the latest version from http://newtran01.au.ao.ericsson.se/moshell
+
+Checking ip contact...OK
+
+HELP MENU            : h
+BASIC MO COMMANDS    : m
+OTHER MO COMMANDS    : n
+OTHER COMMANDS       : o
+PM COMMANDS          : p
+QUIT                 : q
+
+169.254.2.2> uv com_usernames=rbs
+
+com_usernames=rbs
+
+169.254.2.2> uv com_passwords=rbs
+
+com_passwords=rbs
+
+169.254.2.2> lt all
+
+240522-10:44:09 169.254.2.2 22.0u  stopfile=/tmp/68335
+Trying rbs's password from uservariable com_passwords ...OK
+
+$ssh_pid = 68383
+
+Connected to 169.254.2.2 (SubNetwork=ONRM_ROOT_MO,SubNetwork=Lab,MeContext=TLAB07X,ManagedElement=TLAB07X)
+
+Checking MOM version...MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be
+Parsing MOM (cached): /home/rantechdev/moshell_logfiles/logs_moshell/tempfiles/20240522-104408_68300/MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be.xml.cache.gz .................................................................................................................................................................................................................Done.
+Using paramfile /home/rantechdev/moshell/commonjars/pm/PARAM_MSRBS_22.Q3.txt
+Parsing file /home/rantechdev/moshell/commonjars/pm/PARAM_MSRBS_22.Q3.txt ..............................................................................Done.
+Using imomdfile /home/rantechdev/moshell/commonjars/pm/IMOMD_MSRBS_21.Q3.txt
+Using imomfile /home/rantechdev/moshell/commonjars/pm/IMOM_MSRBS_21.Q3.txt
+Connected to 169.254.2.2 (SubNetwork=ONRM_ROOT_MO,SubNetwork=Lab,MeContext=TLAB07X,ManagedElement=TLAB07X)
+
+Last MO: 17552. Loaded 17552 MOs. Total: 17553 MOs.
+
+TLAB07X> deb TLAB07X7F1D
+
+240522-10:44:14 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/68335
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+
+$netconf_pid = 68464
+
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     1                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> get TLAB07X7F1D state
+
+240522-10:44:14 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/68335
+=================================================================================================================
+MO                                                      Attribute         Value
+=================================================================================================================
+EUtranCellFDD=TLAB07X12F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X2F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1B,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1C,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1D,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X5F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X5F1C,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X71F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1C,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1D                               administrativeState 1 (UNLOCKED)
+EUtranCellFDD=TLAB07X7F1D                               dlPowerState      1 (STABLE)
+EUtranCellFDD=TLAB07X7F1D                               operationalState  1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1F,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+SectorCarrier=TLAB07X7F1D                               operationalState  1 (ENABLED)
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D operationalState  1 (ENABLED)
+=================================================================================================================
+Total: 15 MOs
+
+
+TLAB07X> get TLAB07X7F1D arfcn|channelbandwidth|physicalLayerCellId$|configuredmaxtxpower
+
+240522-10:44:14 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/68335
+=================================================================================================================
+MO                                                      Attribute         Value
+=================================================================================================================
+EUtranCellFDD=TLAB07X7F1D                               dlChannelBandwidth 20000
+EUtranCellFDD=TLAB07X7F1D                               dlInternalChannelBandwidth 0
+EUtranCellFDD=TLAB07X7F1D                               earfcndl          3350
+EUtranCellFDD=TLAB07X7F1D                               earfcnul          21350
+EUtranCellFDD=TLAB07X7F1D                               physicalLayerCellId 74
+EUtranCellFDD=TLAB07X7F1D                               ulChannelBandwidth 20000
+EUtranCellFDD=TLAB07X7F1D                               ulInternalChannelBandwidth 0
+SectorCarrier=TLAB07X7F1D                               configuredMaxTxPower 500
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D dlChannelBandwidth 20000
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D earfcndl          3350
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D earfcnul          21350
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D physicalLayerCellId 74
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D ulChannelBandwidth 20000
+=================================================================================================================
+Total: 3 MOs
+
+
+TLAB07X> altk
+
+240522-10:44:14 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/68335
+
+Collecting Alarms...
+...
+====================================================================================================================
+Date & Time (UTC)   S Specific Problem                    MO (Cause/AdditionalInfo)
+====================================================================================================================
+2024-05-15 16:13:32 m Hatch Open                          FieldReplaceableUnit=BB-1 (Hatch cover open AI: ,UI:[{"PN":"Radio Processor 6353","SN":"E23D938601","PNR":"KDU1370095/11","PR":"R2A"}])
+2024-05-15 16:13:34 m SFP Not Present                     FieldReplaceableUnit=RRU-1-2,SfpModule=DATA_1 (No SFP or electrical cable plugged in (Mixed Mode with other ME).)
+2024-05-15 16:21:56 m External Link to GNodeB Failure     ENodeBFunction=1 (X2 link problem to one or several neighbouring gNodeBs. AI: PLMN ID-gNB ID 1 : 302720-3532361,PLMN ID-gNB ID 2 : 302720-3533751,PLMN ID-gNB ID 3 : 302720-3533750,PLMN ID-gNB ID 4 : 302720-3533749,PLMN ID-gNB ID 5 : 302720-3530156,PLMN ID-gNB ID 6 : 302720-3530152,PLMN ID-gNB ID 7 : 302720-3533748)
+2024-05-17 17:23:17 m EC Bus Unreliable Link              EcBus=1 (Possible reasons: two nodes configured as primary, HW unit misconfiguration or EC Bus contact error.)
+2024-05-21 17:03:37 M Synchronization Lost                FieldReplaceableUnit=AAS-8 (ClockSynchronisationProblem AI: UI:[{"PN":"AIR 6419 B78Y","SN":"EA8B289010","PNR":"KRD 901 242/11","PR":"R1B"}])
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X12F1A (Maximum Cell Range is deactivated AI: P:31->35)
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X5F1A (Maximum Cell Range is deactivated)
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X5F1C (Maximum Cell Range is deactivated)
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X71F1A (Maximum Cell Range is deactivated)
+2024-05-22 00:09:47 M Service Unavailable                 NbIotCell=TLAB07X12F1A (This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm. AI: S:35->31)
+2024-05-22 00:09:50 M Resource Configuration Failure      EUtranCellFDD=TLAB07X4F1A (Carrier freq 1720000 out of band. AI: P:36->37)
+2024-05-22 00:09:50 M Service Unavailable                 NbIotCell=TLAB07X4F1A (This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm. AI: S:37->36)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X4F1B (ESS partner cell state is not ACTIVE.)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X4F1D (ESS partner cell state is not ACTIVE.)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X7F1C (ESS partner cell state is not ACTIVE.)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X7F1F (ESS partner cell state is not ACTIVE.)
+>>> Total: 16 Alarms (0 Critical, 12 Major)
+
+TLAB07X> bl TLAB07X7F1D
+
+240522-10:44:15 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/68335
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     0                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> setm EUtranCellFDD puschPwrOffset256qam 8 ul256QamEnabled true
+
+240522-10:44:15 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/68335
+
+============================================================================================================
+   Id  MO                    puschPwrOffset256qam,ul256qamEnabled                                   Result
+============================================================================================================
+   46  EUtranCellFDD=TLAB07X12F1A               8 true  >>> Set.
+  148  EUtranCellFDD=TLAB07X2F1A               8 true  >>> Set.
+  252  EUtranCellFDD=TLAB07X4F1A               8 true  >>> Set.
+  355  EUtranCellFDD=TLAB07X4F1B               8 true  >>> Set.
+  457  EUtranCellFDD=TLAB07X4F1C               8 true  >>> Set.
+  559  EUtranCellFDD=TLAB07X4F1D               8 true  >>> Set.
+  661  EUtranCellFDD=TLAB07X5F1A               8 true  >>> Set.
+  763  EUtranCellFDD=TLAB07X5F1C               8 true  >>> Set.
+  865  EUtranCellFDD=TLAB07X71F1A               8 true  >>> Set.
+  967  EUtranCellFDD=TLAB07X7F1A               8 true  >>> Set.
+ 1068  EUtranCellFDD=TLAB07X7F1C               8 true  >>> Set.
+ 1169  EUtranCellFDD=TLAB07X7F1D               8 true  >>> Set.
+ 1271  EUtranCellFDD=TLAB07X7F1F               8 true  >>> Set.
+============================================================================================================
+Total: 13 MOs attempted, 13 MOs set
+
+TLAB07X> setm TLAB07X7F1D dlChannelBandwidth 20000  ulChannelBandwidth 20000
+
+240522-10:44:15 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/68335
+
+============================================================================================================
+   Id  MO                    dlChannelBandwidth,ulChannelBandwidth                                  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D          20000 20000  >>> Set.
+ 2053  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D  20000 ulChannelBandwidth 20000  !!!! Attribute ExternalEUtranCell::dlChannelBandwidth is readOnly.
+============================================================================================================
+Total: 2 MOs attempted, 1 MOs set
+
+TLAB07X> deb TLAB07X7F1D
+
+240522-10:44:15 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/68335
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     1                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> q!!
+Bye...
+]0; 
+
+127.0.0.1 - - [22/May/2024 10:44:16] "POST /moshell HTTP/HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2024 10:44:16] "POST /moshell HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2024 10:46:14] "POST /yaml HTTP/HTTP/1.1"
+Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'}
 Starting sync process
 Command: git status
 Output: On branch featurebranch
@@ -11,449 +218,19 @@ Your branch is up to date with 'origin/featurebranch'.
 Changes not staged for commit:
   (use "git add/rm <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/test_NPI_TC-01_2024-05-21_07-30-22.py
-	deleted:    Project/test_NPI_TC-02_2024-05-21_07-30-22.py
-	modified:   applogs/app_API.log
-	modified:   applogs/app_API.log.2024-05-20
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	Project/__pycache__/test_NPI_TC-01_2024-05-21_07-30-22.cpython-310-pytest-8.2.0.pyc
-	Project/__pycache__/test_NPI_TC-02_2024-05-21_07-30-22.cpython-310-pytest-8.2.0.pyc
-	Project/old_test_NPI_TC-01_2024-05-21_07-30-22.py
-	Project/old_test_NPI_TC-02_2024-05-21_07-30-22.py
-	Project/test_NPI_TC-01_2024-05-21_11-29-06.py
-	Project/test_NPI_TC-02_2024-05-21_11-29-06.py
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Staging all changes...
-Command: git add .
-Output: 
-Committing changes...
-Command: git commit -m "Commit by Yaml"
-Output: [featurebranch 9bc3ebc] Commit by Yaml
- 8 files changed, 229 insertions(+), 117 deletions(-)
- create mode 100644 Project/__pycache__/test_NPI_TC-01_2024-05-21_07-30-22.cpython-310-pytest-8.2.0.pyc
- create mode 100644 Project/__pycache__/test_NPI_TC-02_2024-05-21_07-30-22.cpython-310-pytest-8.2.0.pyc
- rename Project/{test_NPI_TC-01_2024-05-21_07-30-22.py => old_test_NPI_TC-01_2024-05-21_07-30-22.py} (100%)
- create mode 100644 Project/old_test_NPI_TC-02_2024-05-21_07-30-22.py
- create mode 100644 Project/test_NPI_TC-01_2024-05-21_11-29-06.py
- rename Project/{test_NPI_TC-02_2024-05-21_07-30-22.py => test_NPI_TC-02_2024-05-21_11-29-06.py} (100%)
- rewrite applogs/app_API.log.2024-05-20 (81%)
-Pushing changes to remote...
-Command: git push -u origin featurebranch
-Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
-Remote repository is now in sync with local.
-Sync to Github successfully!
-127.0.0.1 - - [21/May/2024 11:29:07] "POST /yaml HTTP/HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2024 11:29:07] "POST /yaml HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2024 20:08:28] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Starting sync process
-Command: git status
-Output: On branch featurebranch
-Your branch is up to date with 'origin/featurebranch'.
-
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/test_NPI_TC-01_2024-05-21_11-29-06.py
-	deleted:    Project/test_NPI_TC-02_2024-05-21_11-29-06.py
+	deleted:    Project/test_NPI_TM1_2024-05-21_23-09-48.py
+	deleted:    Project/test_NPI_TM2_2024-05-21_23-09-48.py
+	deleted:    Project/test_npi_b7_20Mhz_2024-05-21_23-09-48.py
 	modified:   applogs/app_API.log
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-	Project/old_test_NPI_TC-01_2024-05-21_11-29-06.py
-	Project/old_test_NPI_TC-02_2024-05-21_11-29-06.py
-	Project/test_NPI_TC-01_2024-05-21_20-08-28.py
-	Project/test_NPI_TC-02_2024-05-21_20-08-28.py
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Staging all changes...
-Command: git add .
-Output: 
-Committing changes...
-Command: git commit -m "Commit by Yaml"
-Output: [featurebranch 5706590] Commit by Yaml
- 5 files changed, 215 insertions(+)
- rename Project/{test_NPI_TC-01_2024-05-21_11-29-06.py => old_test_NPI_TC-01_2024-05-21_11-29-06.py} (100%)
- rename Project/{test_NPI_TC-02_2024-05-21_11-29-06.py => old_test_NPI_TC-02_2024-05-21_11-29-06.py} (100%)
- create mode 100644 Project/test_NPI_TC-01_2024-05-21_20-08-28.py
- create mode 100644 Project/test_NPI_TC-02_2024-05-21_20-08-28.py
-Pushing changes to remote...
-Command: git push -u origin featurebranch
-Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
-Remote repository is now in sync with local.
-Sync to Github successfully!
-127.0.0.1 - - [21/May/2024 20:08:29] "POST /yaml HTTP/HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2024 20:08:29] "POST /yaml HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2024 20:22:41] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Yaml file validation has error: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-127.0.0.1 - - [21/May/2024 20:22:41] "POST /yaml HTTP/HTTP/1.1" 400 -
-127.0.0.1 - - [21/May/2024 20:22:41] "[31m[1mPOST /yaml HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/May/2024 20:23:01] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Yaml file validation has error: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-127.0.0.1 - - [21/May/2024 20:23:01] "POST /yaml HTTP/HTTP/1.1" 400 -
-127.0.0.1 - - [21/May/2024 20:23:01] "[31m[1mPOST /yaml HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/May/2024 20:23:06] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Yaml file validation has error: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-127.0.0.1 - - [21/May/2024 20:23:06] "POST /yaml HTTP/HTTP/1.1" 400 -
-127.0.0.1 - - [21/May/2024 20:23:06] "[31m[1mPOST /yaml HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/May/2024 20:23:18] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Starting sync process
-Command: git status
-Output: On branch featurebranch
-Your branch is up to date with 'origin/featurebranch'.
-
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/test_NPI_TC-01_2024-05-21_20-08-28.py
-	deleted:    Project/test_NPI_TC-02_2024-05-21_20-08-28.py
-	modified:   applogs/app_API.log
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	Project/old_test_NPI_TC-01_2024-05-21_20-08-28.py
-	Project/old_test_NPI_TC-02_2024-05-21_20-08-28.py
-	Project/test_NPI_TM1_2024-05-21_20-23-18.py
-	Project/test_NPI_TM2_2024-05-21_20-23-18.py
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Staging all changes...
-Command: git add .
-Output: 
-Committing changes...
-Command: git commit -m "Commit by Yaml"
-Output: [featurebranch d3e2079] Commit by Yaml
- 5 files changed, 227 insertions(+)
- rename Project/{test_NPI_TC-01_2024-05-21_20-08-28.py => old_test_NPI_TC-01_2024-05-21_20-08-28.py} (100%)
- rename Project/{test_NPI_TC-02_2024-05-21_20-08-28.py => old_test_NPI_TC-02_2024-05-21_20-08-28.py} (100%)
- create mode 100644 Project/test_NPI_TM1_2024-05-21_20-23-18.py
- create mode 100644 Project/test_NPI_TM2_2024-05-21_20-23-18.py
-Pushing changes to remote...
-Command: git push -u origin featurebranch
-Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
-Remote repository is now in sync with local.
-Sync to Github successfully!
-127.0.0.1 - - [21/May/2024 20:23:18] "POST /yaml HTTP/HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2024 20:23:18] "POST /yaml HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2024 20:36:52] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Yaml file validation has error: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-127.0.0.1 - - [21/May/2024 20:36:52] "POST /yaml HTTP/HTTP/1.1" 400 -
-127.0.0.1 - - [21/May/2024 20:36:52] "[31m[1mPOST /yaml HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/May/2024 20:37:17] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Yaml file validation has error: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-127.0.0.1 - - [21/May/2024 20:37:17] "POST /yaml HTTP/HTTP/1.1" 400 -
-127.0.0.1 - - [21/May/2024 20:37:17] "[31m[1mPOST /yaml HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/May/2024 20:37:51] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Starting sync process
-Command: git status
-Output: On branch featurebranch
-Your branch is up to date with 'origin/featurebranch'.
-
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/test_NPI_TM1_2024-05-21_20-23-18.py
-	deleted:    Project/test_NPI_TM2_2024-05-21_20-23-18.py
-	modified:   applogs/app_API.log
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	Project/old_test_NPI_TM1_2024-05-21_20-23-18.py
-	Project/old_test_NPI_TM2_2024-05-21_20-23-18.py
-	Project/test_NPI_TM1_2024-05-21_20-37-51.py
-	Project/test_NPI_TM2_2024-05-21_20-37-51.py
-	Project/test_npi_b7_20Mhz_2024-05-21_20-37-51.py
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Staging all changes...
-Command: git add .
-Output: 
-Committing changes...
-Command: git commit -m "Commit by Yaml"
-Output: [featurebranch 440a000] Commit by Yaml
- 6 files changed, 309 insertions(+)
- rename Project/{test_NPI_TM1_2024-05-21_20-23-18.py => old_test_NPI_TM1_2024-05-21_20-23-18.py} (100%)
- rename Project/{test_NPI_TM2_2024-05-21_20-23-18.py => old_test_NPI_TM2_2024-05-21_20-23-18.py} (100%)
- create mode 100644 Project/test_NPI_TM1_2024-05-21_20-37-51.py
- create mode 100644 Project/test_NPI_TM2_2024-05-21_20-37-51.py
- create mode 100644 Project/test_npi_b7_20Mhz_2024-05-21_20-37-51.py
-Pushing changes to remote...
-Command: git push -u origin featurebranch
-Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
-Remote repository is now in sync with local.
-Sync to Github successfully!
-127.0.0.1 - - [21/May/2024 20:37:52] "POST /yaml HTTP/HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2024 20:37:52] "POST /yaml HTTP/1.1" 200 -
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_supportFunctions.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_supportFunctions.py', reloading
- * Restarting with stat
-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:4000
- * Running on http://172.21.61.205:4000
-[33mPress CTRL+C to quit[0m
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_supportFunctions.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_supportFunctions.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:4000
- * Running on http://172.21.61.205:4000
-[33mPress CTRL+C to quit[0m
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
-127.0.0.1 - - [21/May/2024 22:30:45] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-127.0.0.1 - - [21/May/2024 22:30:45] "[35m[1mPOST /yaml HTTP/1.1[0m" 500 -
-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:4000
- * Running on http://172.21.61.205:4000
-[33mPress CTRL+C to quit[0m
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
-127.0.0.1 - - [21/May/2024 22:31:58] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Starting sync process
-Command: git status
-Output: On branch featurebranch
-Your branch is up to date with 'origin/featurebranch'.
-
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/old_TM500_Automaton_Auto_Generate1_2024-05-18_22-33-16.py
-	deleted:    Project/old_test_NPI_TC-01_2024-05-19_23-42-24.py
-	deleted:    Project/old_test_NPI_TC-01_2024-05-20_07-16-41.py
-	deleted:    Project/old_test_NPI_TC-01_2024-05-21_07-30-22.py
-	deleted:    Project/old_test_NPI_TC-01_2024-05-21_11-29-06.py
-	deleted:    Project/old_test_NPI_TC-01_2024-05-21_20-08-28.py
-	deleted:    Project/old_test_NPI_TC-02_2024-05-19_23-42-24.py
-	deleted:    Project/old_test_NPI_TC-02_2024-05-20_07-16-41.py
-	deleted:    Project/old_test_NPI_TC-02_2024-05-21_07-30-22.py
-	deleted:    Project/old_test_NPI_TC-02_2024-05-21_11-29-06.py
-	deleted:    Project/old_test_NPI_TC-02_2024-05-21_20-08-28.py
-	deleted:    Project/old_test_NPI_TM1_2024-05-21_20-23-18.py
-	deleted:    Project/old_test_NPI_TM2_2024-05-21_20-23-18.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-19_08-00-52.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-19_08-58-18.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-19_14-00-11.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-19_15-40-31.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-19_21-59-39.py
-	deleted:    Project/test_NPI_TM1_2024-05-21_20-37-51.py
-	deleted:    Project/test_NPI_TM2_2024-05-21_20-37-51.py
-	deleted:    Project/test_npi_b7_20Mhz_2024-05-21_20-37-51.py
-	deleted:    YAML/testcases.yaml
-	modified:   app.py
-	modified:   applogs/app_API.log
-	modified:   modules/__pycache__/class_TMA_API.cpython-310.pyc
-	modified:   modules/__pycache__/class_supportFunctions.cpython-310.pyc
-	modified:   modules/class_TMA_API.py
-	modified:   modules/class_supportFunctions.py
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	Project/__pycache__/test_NPI_TM1_2024-05-21_20-37-51.cpython-310-pytest-8.2.0.pyc
-	Project/__pycache__/test_NPI_TM2_2024-05-21_20-37-51.cpython-310-pytest-8.2.0.pyc
-	Project/__pycache__/test_npi_b7_20Mhz_2024-05-21_20-37-51.cpython-310-pytest-8.2.0.pyc
-	Project/archived_test_NPI_TM1_2024-05-21_20-37-51.py
-	Project/archived_test_NPI_TM2_2024-05-21_20-37-51.py
-	Project/archived_test_npi_b7_20Mhz_2024-05-21_20-37-51.py
-	Project/test_NPI_TM1_2024-05-21_22-31-58.py
-	Project/test_NPI_TM2_2024-05-21_22-31-58.py
-	Project/test_npi_b7_20Mhz_2024-05-21_22-31-58.py
-	YAML/archive_2024-05-21_22-31-58_testcases.yaml
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Staging all changes...
-Command: git add .
-Output: 
-Committing changes...
-Command: git commit -m "Commit by Yaml"
-Output: [featurebranch a16c280] Commit by Yaml
- 33 files changed, 294 insertions(+), 1452 deletions(-)
- create mode 100644 Project/__pycache__/test_NPI_TM1_2024-05-21_20-37-51.cpython-310-pytest-8.2.0.pyc
- create mode 100644 Project/__pycache__/test_NPI_TM2_2024-05-21_20-37-51.cpython-310-pytest-8.2.0.pyc
- create mode 100644 Project/__pycache__/test_npi_b7_20Mhz_2024-05-21_20-37-51.cpython-310-pytest-8.2.0.pyc
- rename Project/{old_test_NPI_TM1_2024-05-21_20-23-18.py => archived_test_NPI_TM1_2024-05-21_20-37-51.py} (100%)
- rename Project/{old_test_NPI_TM2_2024-05-21_20-23-18.py => archived_test_NPI_TM2_2024-05-21_20-37-51.py} (100%)
- rename Project/{test_npi_b7_20Mhz_2024-05-21_20-37-51.py => archived_test_npi_b7_20Mhz_2024-05-21_20-37-51.py} (100%)
- delete mode 100644 Project/old_TM500_Automaton_Auto_Generate1_2024-05-18_22-33-16.py
- delete mode 100644 Project/old_test_NPI_TC-01_2024-05-19_23-42-24.py
- delete mode 100644 Project/old_test_NPI_TC-01_2024-05-20_07-16-41.py
- delete mode 100644 Project/old_test_NPI_TC-01_2024-05-21_07-30-22.py
- delete mode 100644 Project/old_test_NPI_TC-01_2024-05-21_11-29-06.py
- delete mode 100644 Project/old_test_NPI_TC-01_2024-05-21_20-08-28.py
- delete mode 100644 Project/old_test_NPI_TC-02_2024-05-19_23-42-24.py
- delete mode 100644 Project/old_test_NPI_TC-02_2024-05-20_07-16-41.py
- delete mode 100644 Project/old_test_NPI_TC-02_2024-05-21_07-30-22.py
- delete mode 100644 Project/old_test_NPI_TC-02_2024-05-21_11-29-06.py
- delete mode 100644 Project/old_test_NPI_TC-02_2024-05-21_20-08-28.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-19_08-00-52.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-19_08-58-18.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-19_14-00-11.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-19_15-40-31.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-19_21-59-39.py
- rename Project/{test_NPI_TM1_2024-05-21_20-37-51.py => test_NPI_TM1_2024-05-21_22-31-58.py} (100%)
- rename Project/{test_NPI_TM2_2024-05-21_20-37-51.py => test_NPI_TM2_2024-05-21_22-31-58.py} (100%)
- create mode 100644 Project/test_npi_b7_20Mhz_2024-05-21_22-31-58.py
- create mode 100755 YAML/archive_2024-05-21_22-31-58_testcases.yaml
- delete mode 100644 YAML/testcases.yaml
- rewrite modules/__pycache__/class_supportFunctions.cpython-310.pyc (81%)
-Pushing changes to remote...
-Command: git push -u origin featurebranch
-Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
-Remote repository is now in sync with local.
-Sync to Github successfully!
-127.0.0.1 - - [21/May/2024 22:31:58] "POST /yaml HTTP/HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2024 22:31:58] "POST /yaml HTTP/1.1" 200 -
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
-127.0.0.1 - - [21/May/2024 22:37:33] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Starting sync process
-Command: git status
-Output: On branch featurebranch
-Your branch is up to date with 'origin/featurebranch'.
-
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/test_NPI_TM1_2024-05-21_22-31-58.py
-	deleted:    Project/test_NPI_TM2_2024-05-21_22-31-58.py
-	deleted:    Project/test_npi_b7_20Mhz_2024-05-21_22-31-58.py
-	modified:   applogs/app_API.log
-	modified:   modules/__pycache__/class_TMA_API.cpython-310.pyc
-	modified:   modules/class_TMA_API.py
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	Project/__pycache__/test_NPI_TM1_2024-05-21_22-31-58.cpython-310-pytest-8.2.0.pyc
-	Project/__pycache__/test_NPI_TM2_2024-05-21_22-31-58.cpython-310-pytest-8.2.0.pyc
-	Project/__pycache__/test_npi_b7_20Mhz_2024-05-21_22-31-58.cpython-310-pytest-8.2.0.pyc
-	Project/archived_test_NPI_TM1_2024-05-21_22-31-58.py
-	Project/archived_test_NPI_TM2_2024-05-21_22-31-58.py
-	Project/archived_test_npi_b7_20Mhz_2024-05-21_22-31-58.py
-	Project/test_NPI_TM1_2024-05-21_22-37-33.py
-	Project/test_NPI_TM2_2024-05-21_22-37-33.py
-	Project/test_npi_b7_20Mhz_2024-05-21_22-37-33.py
-	YAML/archive_2024-05-21_22-37-33_testcases.yaml
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Staging all changes...
-Command: git add .
-Output: 
-Committing changes...
-Command: git commit -m "Commit by Yaml"
-Output: [featurebranch 0920b7e] Commit by Yaml
- 13 files changed, 357 insertions(+), 1 deletion(-)
- create mode 100644 Project/__pycache__/test_NPI_TM1_2024-05-21_22-31-58.cpython-310-pytest-8.2.0.pyc
- create mode 100644 Project/__pycache__/test_NPI_TM2_2024-05-21_22-31-58.cpython-310-pytest-8.2.0.pyc
- create mode 100644 Project/__pycache__/test_npi_b7_20Mhz_2024-05-21_22-31-58.cpython-310-pytest-8.2.0.pyc
- rename Project/{test_NPI_TM1_2024-05-21_22-31-58.py => archived_test_NPI_TM1_2024-05-21_22-31-58.py} (100%)
- rename Project/{test_NPI_TM2_2024-05-21_22-31-58.py => archived_test_NPI_TM2_2024-05-21_22-31-58.py} (100%)
- rename Project/{test_npi_b7_20Mhz_2024-05-21_22-31-58.py => archived_test_npi_b7_20Mhz_2024-05-21_22-31-58.py} (100%)
- create mode 100644 Project/test_NPI_TM1_2024-05-21_22-37-33.py
- create mode 100644 Project/test_NPI_TM2_2024-05-21_22-37-33.py
- create mode 100644 Project/test_npi_b7_20Mhz_2024-05-21_22-37-33.py
- create mode 100755 YAML/archive_2024-05-21_22-37-33_testcases.yaml
-Pushing changes to remote...
-Command: git push -u origin featurebranch
-Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
-Remote repository is now in sync with local.
-Sync to Github successfully!
-127.0.0.1 - - [21/May/2024 22:37:34] "POST /yaml HTTP/HTTP/1.1" 200 -
-127.0.0.1 - - [21/May/2024 22:37:34] "POST /yaml HTTP/1.1" 200 -
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
- * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 951-346-808
-127.0.0.1 - - [21/May/2024 23:09:48] "POST /yaml HTTP/HTTP/1.1"
-Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
-Starting sync process
-Command: git status
-Output: On branch featurebranch
-Your branch is up to date with 'origin/featurebranch'.
-
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/test_NPI_TM1_2024-05-21_22-37-33.py
-	deleted:    Project/test_NPI_TM2_2024-05-21_22-37-33.py
-	deleted:    Project/test_npi_b7_20Mhz_2024-05-21_22-37-33.py
-	modified:   applogs/app_API.log
-	modified:   modules/__pycache__/class_TMA_API.cpython-310.pyc
-	modified:   modules/class_TMA_API.py
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	Project/__pycache__/test_NPI_TM1_2024-05-21_22-37-33.cpython-310-pytest-8.2.0.pyc
-	Project/__pycache__/test_NPI_TM2_2024-05-21_22-37-33.cpython-310-pytest-8.2.0.pyc
-	Project/__pycache__/test_npi_b7_20Mhz_2024-05-21_22-37-33.cpython-310-pytest-8.2.0.pyc
-	Project/archived_test_NPI_TM1_2024-05-21_22-37-33.py
-	Project/archived_test_NPI_TM2_2024-05-21_22-37-33.py
-	Project/archived_test_npi_b7_20Mhz_2024-05-21_22-37-33.py
-	Project/test_NPI_TM1_2024-05-21_23-09-48.py
-	Project/test_NPI_TM2_2024-05-21_23-09-48.py
-	Project/test_npi_b7_20Mhz_2024-05-21_23-09-48.py
-	YAML/archive_2024-05-21_23-09-48_testcases.yaml
+	Project/archived_test_NPI_TM1_2024-05-21_23-09-48.py
+	Project/archived_test_NPI_TM2_2024-05-21_23-09-48.py
+	Project/archived_test_npi_b7_20Mhz_2024-05-21_23-09-48.py
+	Project/test_NPI_PilotTest_2024-05-22_10-46-14.py
+	YAML/archive_2024-05-22_10-46-14_NPI_PilotTest.yaml
+	applogs/app_API.log.2024-05-21
 
 no changes added to commit (use "git add" and/or "git commit -a")
 Staging all changes...
