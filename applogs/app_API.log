@@ -382,3 +382,78 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 Staging all changes...
+Command: git add .
+Output: 
+Committing changes...
+Command: git commit -m "Commit by Yaml"
+Output: [featurebranch 0920b7e] Commit by Yaml
+ 13 files changed, 357 insertions(+), 1 deletion(-)
+ create mode 100644 Project/__pycache__/test_NPI_TM1_2024-05-21_22-31-58.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_NPI_TM2_2024-05-21_22-31-58.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_npi_b7_20Mhz_2024-05-21_22-31-58.cpython-310-pytest-8.2.0.pyc
+ rename Project/{test_NPI_TM1_2024-05-21_22-31-58.py => archived_test_NPI_TM1_2024-05-21_22-31-58.py} (100%)
+ rename Project/{test_NPI_TM2_2024-05-21_22-31-58.py => archived_test_NPI_TM2_2024-05-21_22-31-58.py} (100%)
+ rename Project/{test_npi_b7_20Mhz_2024-05-21_22-31-58.py => archived_test_npi_b7_20Mhz_2024-05-21_22-31-58.py} (100%)
+ create mode 100644 Project/test_NPI_TM1_2024-05-21_22-37-33.py
+ create mode 100644 Project/test_NPI_TM2_2024-05-21_22-37-33.py
+ create mode 100644 Project/test_npi_b7_20Mhz_2024-05-21_22-37-33.py
+ create mode 100755 YAML/archive_2024-05-21_22-37-33_testcases.yaml
+Pushing changes to remote...
+Command: git push -u origin featurebranch
+Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
+Remote repository is now in sync with local.
+Sync to Github successfully!
+127.0.0.1 - - [21/May/2024 22:37:34] "POST /yaml HTTP/HTTP/1.1" 200 -
+127.0.0.1 - - [21/May/2024 22:37:34] "POST /yaml HTTP/1.1" 200 -
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_TMA_API.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 951-346-808
+127.0.0.1 - - [21/May/2024 23:09:48] "POST /yaml HTTP/HTTP/1.1"
+Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
+Starting sync process
+Command: git status
+Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/test_NPI_TM1_2024-05-21_22-37-33.py
+	deleted:    Project/test_NPI_TM2_2024-05-21_22-37-33.py
+	deleted:    Project/test_npi_b7_20Mhz_2024-05-21_22-37-33.py
+	modified:   applogs/app_API.log
+	modified:   modules/__pycache__/class_TMA_API.cpython-310.pyc
+	modified:   modules/class_TMA_API.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Project/__pycache__/test_NPI_TM1_2024-05-21_22-37-33.cpython-310-pytest-8.2.0.pyc
+	Project/__pycache__/test_NPI_TM2_2024-05-21_22-37-33.cpython-310-pytest-8.2.0.pyc
+	Project/__pycache__/test_npi_b7_20Mhz_2024-05-21_22-37-33.cpython-310-pytest-8.2.0.pyc
+	Project/archived_test_NPI_TM1_2024-05-21_22-37-33.py
+	Project/archived_test_NPI_TM2_2024-05-21_22-37-33.py
+	Project/archived_test_npi_b7_20Mhz_2024-05-21_22-37-33.py
+	Project/test_NPI_TM1_2024-05-21_23-09-48.py
+	Project/test_NPI_TM2_2024-05-21_23-09-48.py
+	Project/test_npi_b7_20Mhz_2024-05-21_23-09-48.py
+	YAML/archive_2024-05-21_23-09-48_testcases.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Staging all changes...

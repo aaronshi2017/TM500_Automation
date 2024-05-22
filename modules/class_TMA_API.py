@@ -127,6 +127,7 @@ class class_TMA_API:
     
     def schedule_campaign(self,campaignPath,testcaselist=[]):
     # API to schedule by test case;testcaseList should be a list;or use default one so we schedule whole campaign
+        self.testcaseResult={}
         supportfunction= SupportFunctions()
         url_location = self.baseURL + "/0001/campaigns/actions/schedule"
         

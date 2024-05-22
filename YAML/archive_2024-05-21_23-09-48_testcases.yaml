@@ -1,0 +1,21 @@
+# Test case configuration for a sample application
+test_cases:
+  - id: 1
+    Project: "NPI_TM1"
+    XMLpath: "D:/rApps/datasets/TM500/05_Campaign/tm_session_01.xml"
+    Test_cases: []
+    Moshell: "alt;st cell"
+
+  - id: 2
+    Project: "NPI_TM2"
+    XMLpath: "D:/rApps/datasets/TM500/05_Campaign/tm_session_02.xml"
+    Test_cases: [0]
+    Moshell: "alt;st cell"
+    
+  - id: 3
+    Project: "npi_b7_20Mhz"
+    XMLpath: "D:/rApps/datasets/TM500/05_Campaign/npi_b7_20Mhz.xml"
+    Test_cases: []
+    Moshell: "alt;st cell"
+
+
