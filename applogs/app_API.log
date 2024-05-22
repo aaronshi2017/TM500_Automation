@@ -70,3 +70,58 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 Staging all changes...
+Command: git add .
+Output: 
+Committing changes...
+Command: git commit -m "Commit by Yaml"
+Output: [featurebranch 5706590] Commit by Yaml
+ 5 files changed, 215 insertions(+)
+ rename Project/{test_NPI_TC-01_2024-05-21_11-29-06.py => old_test_NPI_TC-01_2024-05-21_11-29-06.py} (100%)
+ rename Project/{test_NPI_TC-02_2024-05-21_11-29-06.py => old_test_NPI_TC-02_2024-05-21_11-29-06.py} (100%)
+ create mode 100644 Project/test_NPI_TC-01_2024-05-21_20-08-28.py
+ create mode 100644 Project/test_NPI_TC-02_2024-05-21_20-08-28.py
+Pushing changes to remote...
+Command: git push -u origin featurebranch
+Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
+Remote repository is now in sync with local.
+Sync to Github successfully!
+127.0.0.1 - - [21/May/2024 20:08:29] "POST /yaml HTTP/HTTP/1.1" 200 -
+127.0.0.1 - - [21/May/2024 20:08:29] "POST /yaml HTTP/1.1" 200 -
+127.0.0.1 - - [21/May/2024 20:22:41] "POST /yaml HTTP/HTTP/1.1"
+Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
+Yaml file validation has error: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
+127.0.0.1 - - [21/May/2024 20:22:41] "POST /yaml HTTP/HTTP/1.1" 400 -
+127.0.0.1 - - [21/May/2024 20:22:41] "[31m[1mPOST /yaml HTTP/1.1[0m" 400 -
+127.0.0.1 - - [21/May/2024 20:23:01] "POST /yaml HTTP/HTTP/1.1"
+Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
+Yaml file validation has error: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
+127.0.0.1 - - [21/May/2024 20:23:01] "POST /yaml HTTP/HTTP/1.1" 400 -
+127.0.0.1 - - [21/May/2024 20:23:01] "[31m[1mPOST /yaml HTTP/1.1[0m" 400 -
+127.0.0.1 - - [21/May/2024 20:23:06] "POST /yaml HTTP/HTTP/1.1"
+Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
+Yaml file validation has error: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
+127.0.0.1 - - [21/May/2024 20:23:06] "POST /yaml HTTP/HTTP/1.1" 400 -
+127.0.0.1 - - [21/May/2024 20:23:06] "[31m[1mPOST /yaml HTTP/1.1[0m" 400 -
+127.0.0.1 - - [21/May/2024 20:23:18] "POST /yaml HTTP/HTTP/1.1"
+Yaml test case files: {'Yaml': 'C:\\TMA_Script\\testcases.yaml'}
+Starting sync process
+Command: git status
+Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/test_NPI_TC-01_2024-05-21_20-08-28.py
+	deleted:    Project/test_NPI_TC-02_2024-05-21_20-08-28.py
+	modified:   applogs/app_API.log
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Project/old_test_NPI_TC-01_2024-05-21_20-08-28.py
+	Project/old_test_NPI_TC-02_2024-05-21_20-08-28.py
+	Project/test_NPI_TM1_2024-05-21_20-23-18.py
+	Project/test_NPI_TM2_2024-05-21_20-23-18.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Staging all changes...
