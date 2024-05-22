@@ -42,11 +42,11 @@ class class_moshellWSL:
             # Specify the file paths with timestamp
             output_dir = os.path.join("output", "json")
             os.makedirs(output_dir, exist_ok=True)  # Create directory if it doesn't exist
-            file_path_json = os.path.join(output_dir, f"{command}_{timestamp}.json")
+            file_path_json = os.path.join(output_dir, f"{timestamp}.json")
 
             output_dir = os.path.join("output", "output_txt")
             os.makedirs(output_dir, exist_ok=True)  # Create directory if it doesn't exist
-            file_path_txt = os.path.join(output_dir, f"{command}_{timestamp}.txt")
+            file_path_txt = os.path.join(output_dir, f"{timestamp}.txt")
 
             # Write data to JSON file
             with open(file_path_json, "w") as json_file:
