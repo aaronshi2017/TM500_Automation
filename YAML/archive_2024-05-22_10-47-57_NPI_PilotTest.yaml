@@ -1,0 +1,19 @@
+# Test case configuration for a sample application
+test_cases:
+  - id: 1
+    Project: "NPI_PilotTest"
+    XMLpath: "D:/rApps/datasets/TM500/06_NPI_Projects/2024_01_NPI_PilotTest/01_tmtestcampaigns/tm_session_01.xml"
+    Test_cases: []
+    Moshell: "deb TLAB07X7F1D;get TLAB07X7F1D state;get TLAB07X7F1D arfcn|channelbandwidth|physicalLayerCellId$|configuredmaxtxpower;altk;bl TLAB07X7F1D;setm EUtranCellFDD puschPwrOffset256qam 8 ul256QamEnabled true;setm TLAB07X7F1D dlChannelBandwidth 20000  ulChannelBandwidth 20000;deb TLAB07X7F1D"
+
+  - id: 2
+    Project: "NPI_PilotTest1"
+    XMLpath: "D:/rApps/datasets/TM500/06_NPI_Projects/2024_01_NPI_PilotTest/01_tmtestcampaigns/tm_session_03.xml"
+    Test_cases: [0]
+    Moshell: "bl TLAB07X7F1D;setm TLAB07X7F1D dlChannelBandwidth 10000 ulChannelBandwidth 10000;deb TLAB07X7F1D"
+
+  - id: 3
+    Project: "NPI_PilotTest2"
+    XMLpath: "D:/rApps/datasets/TM500/06_NPI_Projects/2024_01_NPI_PilotTest/01_tmtestcampaigns/tm_session_04.xml"
+    Test_cases: [0]
+    Moshell: "bl TLAB07X7F1D;setm TLAB07X7F1D dlChannelBandwidth 15000 ulChannelBandwidth 15000;deb TLAB07X7F1D"

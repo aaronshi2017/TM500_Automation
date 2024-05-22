@@ -234,3 +234,46 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 Staging all changes...
+Command: git add .
+Output: 
+Committing changes...
+Command: git commit -m "Commit by Yaml"
+Output: [featurebranch 496ced5] Commit by Yaml
+ 7 files changed, 364 insertions(+), 459 deletions(-)
+ rename Project/{test_NPI_TM1_2024-05-21_23-09-48.py => archived_test_NPI_TM1_2024-05-21_23-09-48.py} (100%)
+ rename Project/{test_NPI_TM2_2024-05-21_23-09-48.py => archived_test_NPI_TM2_2024-05-21_23-09-48.py} (100%)
+ rename Project/{test_npi_b7_20Mhz_2024-05-21_23-09-48.py => archived_test_npi_b7_20Mhz_2024-05-21_23-09-48.py} (100%)
+ create mode 100644 Project/test_NPI_PilotTest_2024-05-22_10-46-14.py
+ create mode 100755 YAML/archive_2024-05-22_10-46-14_NPI_PilotTest.yaml
+ rewrite applogs/app_API.log (97%)
+ copy applogs/{app_API.log => app_API.log.2024-05-21} (94%)
+Pushing changes to remote...
+Command: git push -u origin featurebranch
+Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
+Remote repository is now in sync with local.
+Sync to Github successfully!
+127.0.0.1 - - [22/May/2024 10:46:15] "POST /yaml HTTP/HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2024 10:46:15] "POST /yaml HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2024 10:47:57] "POST /yaml HTTP/HTTP/1.1"
+Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'}
+Starting sync process
+Command: git status
+Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/test_NPI_PilotTest_2024-05-22_10-46-14.py
+	modified:   applogs/app_API.log
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Project/archived_test_NPI_PilotTest_2024-05-22_10-46-14.py
+	Project/test_NPI_PilotTest1_2024-05-22_10-47-57.py
+	Project/test_NPI_PilotTest2_2024-05-22_10-47-57.py
+	Project/test_NPI_PilotTest_2024-05-22_10-47-57.py
+	YAML/archive_2024-05-22_10-47-57_NPI_PilotTest.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Staging all changes...
