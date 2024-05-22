@@ -2,7 +2,7 @@ import requests
 import xml.etree.ElementTree as ET
 import os, time, json, re
 from datetime import datetime
-from class_supportFunctions import SupportFunctions
+from .class_supportFunctions import SupportFunctions
 
 # version 2.0 put under folder Project 
 class class_TMA_API:
