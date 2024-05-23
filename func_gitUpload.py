@@ -1,6 +1,7 @@
 import os
 import subprocess
 import logging
+from logging.handlers import TimedRotatingFileHandler
 
 def run_git_command(command, repo_path):
     try:
@@ -21,7 +22,24 @@ def run_git_command(command, repo_path):
 def setup_logging(output_folder):
     os.makedirs(output_folder, exist_ok=True)
     log_file = os.path.join(output_folder, 'github_commands.log')
-    logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    # Create a TimedRotatingFileHandler
+    handler = TimedRotatingFileHandler(log_file, when='midnight', interval=1, backupCount=7)
+    handler.setLevel(logging.INFO)
+    
+    # Create a formatter that includes the timestamp
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    handler.setFormatter(formatter)
+    
+    # Get the root logger
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+    
+    # Remove any existing handlers
+    if logger.hasHandlers():
+        logger.handlers.clear()
+    
+    # Add the TimedRotatingFileHandler to the logger
+    logger.addHandler(handler)
 
 def sync_remote_with_local(project='test', remote_name='origin', branch_name='featurebranch'):
     # Specify the output folder for logs

@@ -18,7 +18,7 @@ def TMA_API():
     return class_TMA_API()
 
 def test_step1_command(moshell_command):
-    result=moshell_command.command_execution("alt;st cell")
+    result=moshell_command.command_execution("deb TLAB07X7F1D;get TLAB07X7F1D state;get TLAB07X7F1D arfcn|channelbandwidth|physicalLayerCellId$|configuredmaxtxpower;altk;bl TLAB07X7F1D;setm EUtranCellFDD puschPwrOffset256qam 8 ul256QamEnabled true;setm TLAB07X7F1D dlChannelBandwidth 20000 ulChannelBandwidth 20000;deb TLAB07X7F1D")
     print(result)
     assert result is not None
 
@@ -44,8 +44,8 @@ def test_step5_check_TMA_location(TMA_API):
     assert result1==200
 
 def test_step6_schedule_campaign(TMA_API):
-    path=r"D:/rApps/datasets/TM500/05_Campaign/tm_session_01.xml"
-    testcase=[]
+    path=r"D:/rApps/datasets/TM500/06_NPI_Projects/2024_01_NPI_PilotTest/01_tmtestcampaigns/tm_session_01.xml"
+    testcase=[1]
     result1,result2=TMA_API.schedule_campaign(path,testcase)
     print(result1,result2)
     assert result1==200
@@ -76,7 +76,7 @@ def test_step8_generate_report_to_end(TMA_API):
 
 def test_step9_update_report_to_database(TMA_API):
     if finalverdict=="PASS":
-        result1, result2 = TMA_API.send_to_Database("NPI_TM1",sessionName,False)
+        result1, result2 = TMA_API.send_to_Database("NPI_PilotTest",sessionName,False)
         print(result1,result2)
         assert result1 == 200
     else:

@@ -2,12 +2,14 @@ import os,glob
 from datetime import datetime
 class PytestGeneration:
 
+    id=""
     project=""
     XMLpath=""
     testcases=None
     moshellcommand=""
 
-    def __init__(self,project,XMLpath,testcases,moshellcommand):
+    def __init__(self,id,project,XMLpath,testcases,moshellcommand):
+        self.id=id
         self.project=project
         self.XMLpath=XMLpath
         self.testcases=testcases
@@ -123,7 +125,7 @@ def test_step9_update_report_to_database(TMA_API):
             arg4=self.project
         )
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        testname='test_'+self.project+'_'+timestamp+'.py'
+        testname='test_'+self.project+"_"+str(self.id)+'_'+timestamp+'.py'
         # Define the file path within the project folder
         base_dir = os.path.dirname(__file__)
         # Define the relative path to subfolder1 from the script's location

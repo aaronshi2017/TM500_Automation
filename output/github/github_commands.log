@@ -1,87 +1,56 @@
-2024-05-19 10:11:59,422 - INFO - Check status
-2024-05-19 10:11:59,424 - INFO - Command: git status
-2024-05-19 10:11:59,424 - INFO - Output: On branch featurebranch
+2024-05-23 06:18:24,942 - INFO - Starting sync process
+2024-05-23 06:18:24,945 - INFO - Command: git status
+2024-05-23 06:18:24,945 - INFO - Output: On branch featurebranch
 Your branch is up to date with 'origin/featurebranch'.
 
 Changes not staged for commit:
   (use "git add/rm <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/old_test_Test_5-17_2024-05-18_07-11-10.py
-	deleted:    Project/old_test_Test_5-17_2024-05-18_08-49-26.py
-	deleted:    Project/old_test_Test_5-17_2024-05-18_10-41-25.py
-	deleted:    Project/old_test_Test_5-17_2024-05-18_10-42-32.py
-	deleted:    Project/old_test_Test_5-17_2024-05-18_10-46-51.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-18_10-59-37.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-18_11-24-45.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-18_11-53-40.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-18_12-01-31.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-18_22-35-41.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-19_05-25-40.py
-	deleted:    Project/old_test_Test_5-18_2024-05-18_10-49-55.py
-	deleted:    Project/old_test_Test_5-18_2024-05-18_10-53-06.py
+	deleted:    Project/archived_test_NPI_PilotTest1_2024-05-22_10-47-57.py
+	deleted:    Project/archived_test_NPI_PilotTest1_2024-05-22_11-25-55.py
+	deleted:    Project/archived_test_NPI_PilotTest2_2024-05-22_10-47-57.py
+	deleted:    Project/archived_test_NPI_PilotTest2_2024-05-22_11-25-55.py
+	deleted:    Project/archived_test_NPI_PilotTest3_2024-05-22_11-25-55.py
+	deleted:    Project/archived_test_NPI_PilotTest_2024-05-22_10-46-14.py
+	deleted:    Project/archived_test_NPI_PilotTest_2024-05-22_10-47-57.py
+	deleted:    Project/archived_test_NPI_TM1_2024-05-21_20-37-51.py
+	deleted:    Project/archived_test_NPI_TM1_2024-05-21_22-31-58.py
+	deleted:    Project/archived_test_NPI_TM1_2024-05-21_22-37-33.py
+	deleted:    Project/archived_test_NPI_TM1_2024-05-21_23-09-48.py
+	deleted:    Project/archived_test_NPI_TM2_2024-05-21_20-37-51.py
+	deleted:    Project/archived_test_NPI_TM2_2024-05-21_22-31-58.py
+	deleted:    Project/archived_test_NPI_TM2_2024-05-21_22-37-33.py
+	deleted:    Project/archived_test_NPI_TM2_2024-05-21_23-09-48.py
+	deleted:    Project/archived_test_npi_b7_20Mhz_2024-05-21_20-37-51.py
+	deleted:    Project/archived_test_npi_b7_20Mhz_2024-05-21_22-31-58.py
+	deleted:    Project/archived_test_npi_b7_20Mhz_2024-05-21_22-37-33.py
+	deleted:    Project/archived_test_npi_b7_20Mhz_2024-05-21_23-09-48.py
+	deleted:    Project/test_NPI_PilotTest1_2024-05-22_14-20-53.py
+	deleted:    Project/test_NPI_PilotTest2_2024-05-22_14-20-53.py
+	deleted:    Project/test_NPI_PilotTest3_2024-05-22_14-20-53.py
+	modified:   __pycache__/func_gitUpload.cpython-310.pyc
+	modified:   app.py
 	modified:   applogs/app_API.log
-	deleted:    modules/func_gitUpload.py
+	modified:   func_gitUpload.py
+	modified:   modules/__pycache__/class_pytestGenerate.cpython-310.pyc
+	modified:   modules/class_pytestGenerate.py
+	modified:   output/github/github_commands.log
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-	func_gitUpload.py
-	output/github/
+	Project/__pycache__/test_NPI_PilotTest1_2024-05-22_14-20-53.cpython-310-pytest-8.2.0.pyc
+	Project/__pycache__/test_NPI_PilotTest2_2024-05-22_14-20-53.cpython-310-pytest-8.2.0.pyc
+	Project/__pycache__/test_NPI_PilotTest3_2024-05-22_14-20-53.cpython-310-pytest-8.2.0.pyc
+	Project/archived_test_NPI_PilotTest1_2024-05-22_14-20-53.py
+	Project/archived_test_NPI_PilotTest2_2024-05-22_14-20-53.py
+	Project/archived_test_NPI_PilotTest3_2024-05-22_14-20-53.py
+	Project/test_NPI_PilotTest_1_2024-05-23_06-18-22.py
+	Project/test_NPI_PilotTest_2_2024-05-23_06-18-23.py
+	Project/test_NPI_PilotTest_3_2024-05-23_06-18-24.py
+	YAML/archive_2024-05-23_06-17-02_NPI_PilotTest.yaml
+	YAML/archive_2024-05-23_06-18-21_NPI_PilotTest.yaml
+	applogs/app_API.log.2024-05-22
+	output/github/github_commands.log.2024-05-19
 
 no changes added to commit (use "git add" and/or "git commit -a")
-2024-05-19 13:55:16,177 - INFO - Starting sync process
-2024-05-19 13:55:16,178 - INFO - Command: git status
-2024-05-19 13:55:16,179 - INFO - Output: On branch featurebranch
-Your branch is up to date with 'origin/featurebranch'.
-
-Changes not staged for commit:
-  (use "git add/rm <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/old_test_Test_5-17_2024-05-18_07-11-10.py
-	deleted:    Project/old_test_Test_5-17_2024-05-18_08-49-26.py
-	deleted:    Project/old_test_Test_5-17_2024-05-18_10-41-25.py
-	deleted:    Project/old_test_Test_5-17_2024-05-18_10-42-32.py
-	deleted:    Project/old_test_Test_5-17_2024-05-18_10-46-51.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-18_10-59-37.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-18_11-24-45.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-18_11-53-40.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-18_12-01-31.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-18_22-35-41.py
-	deleted:    Project/old_test_Test_5-18-test_2024-05-19_05-25-40.py
-	deleted:    Project/old_test_Test_5-18_2024-05-18_10-49-55.py
-	deleted:    Project/old_test_Test_5-18_2024-05-18_10-53-06.py
-	modified:   applogs/app_API.log
-	deleted:    modules/func_gitUpload.py
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	func_gitUpload.py
-	output/github/
-
-no changes added to commit (use "git add" and/or "git commit -a")
-2024-05-19 13:55:16,179 - INFO - Staging all changes...
-2024-05-19 13:55:16,181 - INFO - Command: git add .
-2024-05-19 13:55:16,182 - INFO - Output: 
-2024-05-19 13:55:16,182 - INFO - Committing changes...
-2024-05-19 13:55:16,187 - INFO - Command: git commit -m "Commit by test"
-2024-05-19 13:55:16,187 - INFO - Output: [featurebranch 3d1b421] Commit by test
- 17 files changed, 656 insertions(+), 1209 deletions(-)
- delete mode 100644 Project/old_test_Test_5-17_2024-05-18_07-11-10.py
- delete mode 100644 Project/old_test_Test_5-17_2024-05-18_08-49-26.py
- delete mode 100644 Project/old_test_Test_5-17_2024-05-18_10-41-25.py
- delete mode 100644 Project/old_test_Test_5-17_2024-05-18_10-42-32.py
- delete mode 100644 Project/old_test_Test_5-17_2024-05-18_10-46-51.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-18_10-59-37.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-18_11-24-45.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-18_11-53-40.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-18_12-01-31.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-18_22-35-41.py
- delete mode 100644 Project/old_test_Test_5-18-test_2024-05-19_05-25-40.py
- delete mode 100644 Project/old_test_Test_5-18_2024-05-18_10-49-55.py
- delete mode 100644 Project/old_test_Test_5-18_2024-05-18_10-53-06.py
- create mode 100644 func_gitUpload.py
- delete mode 100644 modules/func_gitUpload.py
- create mode 100644 output/github/github_commands.log
-2024-05-19 13:55:16,187 - INFO - Pushing changes to remote...
-2024-05-19 13:55:17,058 - INFO - Command: git push -u origin featurebranch
-2024-05-19 13:55:17,059 - INFO - Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
-2024-05-19 13:55:17,059 - INFO - Remote repository is now in sync with local.
+2024-05-23 06:18:24,945 - INFO - Staging all changes...

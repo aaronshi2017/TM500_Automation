@@ -23,7 +23,7 @@ log_handler = TimedRotatingFileHandler(os.path.join(log_directory, 'app_API.log'
 log_handler.setLevel(logging.INFO)
 
 # Define the log message format
-formatter = CustomFormatter('%(message)s')
+formatter = CustomFormatter('%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]')
 log_handler.setFormatter(formatter)
 # Ensure the root logger is configured to capture logs
 logging.basicConfig(level=logging.INFO, handlers=[log_handler])
@@ -68,9 +68,11 @@ def read_yaml(file_path):
     with open(file_path, 'r') as file:
         try:
             config = yaml.safe_load(file)
+            app.logger.info("Read YAML file successfully!")
             return config
         except yaml.YAMLError as exc:
             print(f"Error reading YAML file: {exc}")
+            app.logger.info("Read YAML file error!")
             return None
     
 @app.route('/yaml',methods=['POST'])
@@ -87,11 +89,13 @@ def yaml_handle():
         support_function.rename_test_files_in_project_folders() #mark previous test files as archived_
         support_function.savefile_YAML(wslYamlfile)
         for test_case in config['test_cases']:
+            ID=test_case['id']
             Project=test_case['Project']
             XMLpath=test_case['XMLpath']
             Testcase=test_case['Test_cases']
             Moshell=test_case['Moshell']
-            pytestScript=PytestGeneration(Project,XMLpath,Testcase,Moshell)
+            pytestScript=PytestGeneration(ID,Project,XMLpath,Testcase,Moshell)
+            time.sleep(1)
             result=pytestScript.generate_pytest_script()
         if func_gitUpload.sync_remote_with_local("Yaml", remote_name='origin', branch_name='featurebranch'):
             app.logger.info(f'Sync to Github successfully!')
