@@ -32,3 +32,21 @@
 2024-05-23 06:18:21,929 INFO: 127.0.0.1 - - [23/May/2024 06:18:21] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
 2024-05-23 06:18:21,929 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
 2024-05-23 06:18:21,932 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]
+2024-05-23 06:18:25,672 INFO: Sync to Github successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:101]
+2024-05-23 06:18:25,672 INFO: 127.0.0.1 - - [23/May/2024 06:18:25] "POST /yaml HTTP/HTTP/1.1" 200 - [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:45]
+2024-05-23 06:21:33,289 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:21:33,362 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:21:33,362 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:22:09,884 INFO:  * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_moshellWSL.py', reloading [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:22:09,897 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:00,666 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.21.61.205:4000 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:00,667 INFO: [33mPress CTRL+C to quit[0m [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:00,667 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:00,740 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:00,741 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:04,818 INFO: 127.0.0.1 - - [23/May/2024 06:37:04] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
+2024-05-23 06:37:04,818 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
+2024-05-23 06:37:04,820 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]

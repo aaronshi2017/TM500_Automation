@@ -54,3 +54,102 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 2024-05-23 06:18:24,945 - INFO - Staging all changes...
+2024-05-23 06:18:24,951 - INFO - Command: git add .
+2024-05-23 06:18:24,951 - INFO - Output: 
+2024-05-23 06:18:24,951 - INFO - Committing changes...
+2024-05-23 06:18:24,968 - INFO - Command: git commit -m "Commit by Yaml"
+2024-05-23 06:18:24,968 - INFO - Output: [featurebranch b66a6b0] Commit by Yaml
+ 35 files changed, 180 insertions(+), 1479 deletions(-)
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest1_2024-05-22_14-20-53.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest2_2024-05-22_14-20-53.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest3_2024-05-22_14-20-53.cpython-310-pytest-8.2.0.pyc
+ rename Project/{test_NPI_PilotTest1_2024-05-22_14-20-53.py => archived_test_NPI_PilotTest1_2024-05-22_14-20-53.py} (100%)
+ delete mode 100644 Project/archived_test_NPI_PilotTest2_2024-05-22_10-47-57.py
+ rename Project/{archived_test_NPI_PilotTest2_2024-05-22_11-25-55.py => archived_test_NPI_PilotTest2_2024-05-22_14-20-53.py} (100%)
+ rename Project/{archived_test_NPI_PilotTest3_2024-05-22_11-25-55.py => archived_test_NPI_PilotTest3_2024-05-22_14-20-53.py} (100%)
+ delete mode 100644 Project/archived_test_NPI_PilotTest_2024-05-22_10-47-57.py
+ delete mode 100644 Project/archived_test_NPI_TM1_2024-05-21_20-37-51.py
+ delete mode 100644 Project/archived_test_NPI_TM1_2024-05-21_22-31-58.py
+ delete mode 100644 Project/archived_test_NPI_TM1_2024-05-21_22-37-33.py
+ delete mode 100644 Project/archived_test_NPI_TM1_2024-05-21_23-09-48.py
+ delete mode 100644 Project/archived_test_NPI_TM2_2024-05-21_20-37-51.py
+ delete mode 100644 Project/archived_test_NPI_TM2_2024-05-21_22-31-58.py
+ delete mode 100644 Project/archived_test_NPI_TM2_2024-05-21_22-37-33.py
+ delete mode 100644 Project/archived_test_NPI_TM2_2024-05-21_23-09-48.py
+ delete mode 100644 Project/archived_test_npi_b7_20Mhz_2024-05-21_20-37-51.py
+ delete mode 100644 Project/archived_test_npi_b7_20Mhz_2024-05-21_22-37-33.py
+ delete mode 100644 Project/archived_test_npi_b7_20Mhz_2024-05-21_23-09-48.py
+ delete mode 100644 Project/test_NPI_PilotTest2_2024-05-22_14-20-53.py
+ delete mode 100644 Project/test_NPI_PilotTest3_2024-05-22_14-20-53.py
+ rename Project/{archived_test_NPI_PilotTest1_2024-05-22_11-25-55.py => test_NPI_PilotTest_1_2024-05-23_06-18-22.py} (98%)
+ rename Project/{archived_test_NPI_PilotTest1_2024-05-22_10-47-57.py => test_NPI_PilotTest_2_2024-05-23_06-18-23.py} (98%)
+ rename Project/{archived_test_NPI_PilotTest_2024-05-22_10-46-14.py => test_NPI_PilotTest_3_2024-05-23_06-18-24.py} (100%)
+ create mode 100755 YAML/archive_2024-05-23_06-17-02_NPI_PilotTest.yaml
+ create mode 100755 YAML/archive_2024-05-23_06-18-21_NPI_PilotTest.yaml
+ rewrite applogs/app_API.log (93%)
+ copy applogs/{app_API.log => app_API.log.2024-05-22} (80%)
+ rename Project/archived_test_npi_b7_20Mhz_2024-05-21_22-31-58.py => modules/__pycache__/class_pytestGenerate.cpython-310.pyc (52%)
+ rewrite output/github/github_commands.log (91%)
+ copy output/github/{github_commands.log => github_commands.log.2024-05-19} (100%)
+2024-05-23 06:18:24,968 - INFO - Pushing changes to remote...
+2024-05-23 06:18:25,672 - INFO - Command: git push -u origin featurebranch
+2024-05-23 06:18:25,672 - INFO - Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
+2024-05-23 06:18:25,672 - INFO - Remote repository is now in sync with local.
+2024-05-23 06:18:25,673 - INFO - 127.0.0.1 - - [23/May/2024 06:18:25] "POST /yaml HTTP/1.1" 200 -
+2024-05-23 06:21:33,275 - INFO -  * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_moshellWSL.py', reloading
+2024-05-23 06:37:07,831 - INFO - Starting sync process
+2024-05-23 06:37:07,832 - INFO - Command: git status
+2024-05-23 06:37:07,832 - INFO - Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/test_NPI_PilotTest_1_2024-05-23_06-18-22.py
+	deleted:    Project/test_NPI_PilotTest_2_2024-05-23_06-18-23.py
+	deleted:    Project/test_NPI_PilotTest_3_2024-05-23_06-18-24.py
+	modified:   applogs/app_API.log
+	modified:   modules/__pycache__/class_moshellWSL.cpython-310.pyc
+	modified:   modules/class_moshellWSL.py
+	modified:   output/github/github_commands.log
+	deleted:    output/json/alt;st cell_2024-05-18_10-10-35.json
+	deleted:    output/json/st cell;alt;_2024-05-18_10-43-15.json
+	deleted:    output/json/st cell;alt;_2024-05-18_10-47-24.json
+	deleted:    output/json/st cell;alt;_2024-05-18_11-27-38.json
+	deleted:    output/json/st cell;alt;_2024-05-18_20-40-10.json
+	deleted:    output/json/st cell;alt;_2024-05-18_20-44-58.json
+	deleted:    output/json/st cell;alt;_2024-05-18_20-49-01.json
+	deleted:    output/json/st cell;alt;_2024-05-18_20-51-29.json
+	deleted:    output/json/st cell;alt;_2024-05-18_21-03-52.json
+	deleted:    output/json/st cell;alt;_2024-05-18_22-37-41.json
+	deleted:    output/json/st cell;alt;_2024-05-19_05-26-27.json
+	deleted:    output/json/st cell;alt;_2024-05-19_08-26-05.json
+	deleted:    output/output_txt/alt;st cell_2024-05-18_10-10-35.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-18_10-43-15.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-18_10-47-24.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-18_11-27-38.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-18_20-40-10.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-18_20-44-58.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-18_20-49-01.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-18_20-51-29.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-18_21-03-52.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-18_22-37-41.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-19_05-26-27.txt
+	deleted:    output/output_txt/st cell;alt;_2024-05-19_08-26-05.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Project/__pycache__/test_NPI_PilotTest_1_2024-05-23_06-18-22.cpython-310-pytest-8.2.0.pyc
+	Project/__pycache__/test_NPI_PilotTest_2_2024-05-23_06-18-23.cpython-310-pytest-8.2.0.pyc
+	Project/__pycache__/test_NPI_PilotTest_3_2024-05-23_06-18-24.cpython-310-pytest-8.2.0.pyc
+	Project/archived_test_NPI_PilotTest_1_2024-05-23_06-18-22.py
+	Project/archived_test_NPI_PilotTest_2_2024-05-23_06-18-23.py
+	Project/archived_test_NPI_PilotTest_3_2024-05-23_06-18-24.py
+	Project/test_NPI_PilotTest_1_2024-05-23_06-37-05.py
+	Project/test_NPI_PilotTest_2_2024-05-23_06-37-06.py
+	Project/test_NPI_PilotTest_3_2024-05-23_06-37-07.py
+	YAML/archive_2024-05-23_06-37-04_NPI_PilotTest.yaml
+	output/moshell/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2024-05-23 06:37:07,833 - INFO - Staging all changes...
