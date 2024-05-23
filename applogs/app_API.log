@@ -297,3 +297,8 @@ Bye...
 2024-05-23 13:20:14,149 INFO: 127.0.0.1 - - [23/May/2024 13:20:14] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
 2024-05-23 13:20:14,150 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest_1.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
 2024-05-23 13:20:14,152 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]
+2024-05-23 13:20:16,951 INFO: Sync to Github successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:101]
+2024-05-23 13:20:16,951 INFO: 127.0.0.1 - - [23/May/2024 13:20:16] "POST /yaml HTTP/HTTP/1.1" 200 - [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:45]
+2024-05-23 14:47:48,609 INFO: 127.0.0.1 - - [23/May/2024 14:47:48] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
+2024-05-23 14:47:48,609 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest_1.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
+2024-05-23 14:47:48,611 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]

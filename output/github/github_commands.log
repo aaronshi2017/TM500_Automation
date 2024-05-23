@@ -286,3 +286,47 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 2024-05-23 13:20:16,168 - INFO - Staging all changes...
+2024-05-23 13:20:16,177 - INFO - Command: git add .
+2024-05-23 13:20:16,177 - INFO - Output: 
+2024-05-23 13:20:16,177 - INFO - Committing changes...
+2024-05-23 13:20:16,197 - INFO - Command: git commit -m "Commit by Yaml"
+2024-05-23 13:20:16,197 - INFO - Output: [featurebranch df1c8c6] Commit by Yaml
+ 15 files changed, 1833 insertions(+), 20 deletions(-)
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest_1_2024-05-23_07-17-23.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest_2_2024-05-23_07-17-24.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest_3_2024-05-23_07-17-25.cpython-310-pytest-8.2.0.pyc
+ rename Project/{test_NPI_PilotTest_1_2024-05-23_07-17-23.py => archived_test_NPI_PilotTest_1_2024-05-23_07-17-23.py} (100%)
+ rename Project/{test_NPI_PilotTest_2_2024-05-23_07-17-24.py => archived_test_NPI_PilotTest_2_2024-05-23_07-17-24.py} (100%)
+ rename Project/{test_NPI_PilotTest_3_2024-05-23_07-17-25.py => archived_test_NPI_PilotTest_3_2024-05-23_07-17-25.py} (100%)
+ create mode 100644 Project/test_NPI_PilotTest_1_2024-05-23_13-20-15.py
+ create mode 100644 Project/test_NPI_PilotTest_2_2024-05-23_13-20-16.py
+ create mode 100755 YAML/archive_2024-05-23_13-20-14_NPI_PilotTest_1.yaml
+2024-05-23 13:20:16,197 - INFO - Pushing changes to remote...
+2024-05-23 13:20:16,950 - INFO - Command: git push -u origin featurebranch
+2024-05-23 13:20:16,950 - INFO - Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
+2024-05-23 13:20:16,951 - INFO - Remote repository is now in sync with local.
+2024-05-23 13:20:16,951 - INFO - 127.0.0.1 - - [23/May/2024 13:20:16] "POST /yaml HTTP/1.1" 200 -
+2024-05-23 14:47:50,619 - INFO - Starting sync process
+2024-05-23 14:47:50,622 - INFO - Command: git status
+2024-05-23 14:47:50,622 - INFO - Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/test_NPI_PilotTest_1_2024-05-23_13-20-15.py
+	deleted:    Project/test_NPI_PilotTest_2_2024-05-23_13-20-16.py
+	modified:   applogs/app_API.log
+	modified:   output/github/github_commands.log
+	modified:   output/moshell/moshell_commands.log
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Project/archived_test_NPI_PilotTest_1_2024-05-23_13-20-15.py
+	Project/archived_test_NPI_PilotTest_2_2024-05-23_13-20-16.py
+	Project/test_NPI_PilotTest_1_2024-05-23_14-47-49.py
+	Project/test_NPI_PilotTest_2_2024-05-23_14-47-50.py
+	YAML/archive_2024-05-23_14-47-48_NPI_PilotTest_1.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2024-05-23 14:47:50,623 - INFO - Staging all changes...

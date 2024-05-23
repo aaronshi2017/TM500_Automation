@@ -4730,3 +4730,488 @@ TLAB07X> q!!
 Bye...
 ]0; 
 
+2024-05-23 13:21:01,564 - INFO - original input command:deb TLAB07X7F1D;get TLAB07X7F1D state;get TLAB07X7F1D arfcn|channelbandwidth|physicalLayerCellId$|configuredmaxtxpower;altk;bl TLAB07X7F1D;setm EUtranCellFDD puschPwrOffset256qam 8 ul256QamEnabled true;setm TLAB07X7F1D dlChannelBandwidth 20000 ulChannelBandwidth 20000;deb TLAB07X7F1D
+2024-05-23 13:21:01,564 - INFO - final command:moshell 169.254.2.2 "uv com_usernames=rbs;uv com_passwords=rbs;lt all;st cell;deb cell;deb TLAB07X7F1D;get TLAB07X7F1D state;get TLAB07X7F1D arfcn|channelbandwidth|physicalLayerCellId$|configuredmaxtxpower;altk;bl TLAB07X7F1D;setm EUtranCellFDD puschPwrOffset256qam 8 ul256QamEnabled true;setm TLAB07X7F1D dlChannelBandwidth 20000 ulChannelBandwidth 20000;deb TLAB07X7F1D"
+2024-05-23 13:21:16,928 - INFO - Command execution successfully!
+2024-05-23 13:21:16,928 - INFO - =======================Command execution result======================
+2024-05-23 13:21:16,928 - INFO - 
+#####################################################################
+#            Welcome to MoShell 22.0u (LPA108514/1_R22U)            #
+#                Finn Magnusson, Jan Pettersson                     #
+#           http://newtran01.au.ao.ericsson.se/moshell              #
+#            Contact: Finn.Magnusson@ericsson.com                   #
+#                     Patrik.Ek@ericsson.com                        #
+#####################################################################
+      Copyright (c) Ericsson AB 2001-2022 - All Rights Reserved      
+
+[1;31mWARNING: [0mthe moshell version currently running is more than 83 weeks old.
+It is recommended to always use the latest released moshell version.
+Please download the latest version from http://newtran01.au.ao.ericsson.se/moshell
+
+Checking ip contact...OK
+
+HELP MENU            : h
+BASIC MO COMMANDS    : m
+OTHER MO COMMANDS    : n
+OTHER COMMANDS       : o
+PM COMMANDS          : p
+QUIT                 : q
+
+169.254.2.2> uv com_usernames=rbs
+
+com_usernames=rbs
+
+169.254.2.2> uv com_passwords=rbs
+
+com_passwords=rbs
+
+169.254.2.2> lt all
+
+240523-13:21:06 169.254.2.2 22.0u  stopfile=/tmp/7435
+Trying rbs's password from uservariable com_passwords ...OK
+
+$ssh_pid = 7488
+
+Connected to 169.254.2.2 (SubNetwork=ONRM_ROOT_MO,SubNetwork=Lab,MeContext=TLAB07X,ManagedElement=TLAB07X)
+
+Checking MOM version...MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be
+Parsing MOM (cached): /home/rantechdev/moshell_logfiles/logs_moshell/tempfiles/20240523-132106_7400/MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be.xml.cache.gz .................................................................................................................................................................................................................Done.
+Using paramfile /home/rantechdev/moshell/commonjars/pm/PARAM_MSRBS_22.Q3.txt
+Parsing file /home/rantechdev/moshell/commonjars/pm/PARAM_MSRBS_22.Q3.txt ..............................................................................Done.
+Using imomdfile /home/rantechdev/moshell/commonjars/pm/IMOMD_MSRBS_21.Q3.txt
+Using imomfile /home/rantechdev/moshell/commonjars/pm/IMOM_MSRBS_21.Q3.txt
+Connected to 169.254.2.2 (SubNetwork=ONRM_ROOT_MO,SubNetwork=Lab,MeContext=TLAB07X,ManagedElement=TLAB07X)
+
+Last MO: 17553. Loaded 17553 MOs. Total: 17554 MOs.
+
+TLAB07X> st cell
+
+240523-13:21:13 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/7435
+===================================================================================
+Proxy  Adm State     Op. State     MO
+===================================================================================
+   46  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X12F1A
+  148  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellFDD=TLAB07X2F1A
+  252  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X4F1A
+  355  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X4F1B
+  457  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X4F1C
+  559  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X4F1D
+  661  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X5F1A
+  763  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X5F1C
+  865  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X71F1A
+  967  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X7F1A
+ 1068  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X7F1C
+ 1169  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellFDD=TLAB07X7F1D
+ 1271  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X7F1F
+ 1506  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,NbIotCell=TLAB07X12F1A
+ 1507  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,NbIotCell=TLAB07X4F1A
+ 1508  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,NbIotCell=TLAB07X4F1C
+ 2043                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X12F1A
+ 2044                1 (ENABLED)   GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X2F1A
+ 2045                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X4F1A
+ 2046                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X4F1B
+ 2047                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X4F1C
+ 2048                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X4F1D
+ 2049                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X5F1A
+ 2050                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X5F1C
+ 2051                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X71F1A
+ 2052                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1A
+ 2053                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1C
+ 2054                1 (ENABLED)   GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D
+ 2055                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1F
+ 2627  1 (UNLOCKED)  1 (ENABLED)   GNBDUFunction=1,NRCellDU=TLAB07X2F2A
+ 2629  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X4F1B
+ 2631  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X4F1D
+ 2633  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X4F2A
+ 2635  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X4F2C
+ 2637  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X5F1B
+ 2639  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X5F1C
+ 2641  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X71F1A
+ 2643  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X78F1B
+ 2645  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X78F1C
+ 2647  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X7F1B
+ 2649  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X7F1C
+ 2651  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X7F1E
+ 2653  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X7F1F
+===================================================================================
+Total: 43 MOs
+
+TLAB07X> deb cell
+
+240523-13:21:13 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/7435
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+
+$netconf_pid = 7574
+
+   46  EUtranCellFDD=TLAB07X12F1A                                    1                    >>> Set.
+  148  EUtranCellFDD=TLAB07X2F1A                                     1                    >>> Set.
+  252  EUtranCellFDD=TLAB07X4F1A                                     1                    >>> Set.
+  355  EUtranCellFDD=TLAB07X4F1B                                     1                    >>> Set.
+  457  EUtranCellFDD=TLAB07X4F1C                                     1                    >>> Set.
+  559  EUtranCellFDD=TLAB07X4F1D                                     1                    >>> Set.
+  661  EUtranCellFDD=TLAB07X5F1A                                     1                    >>> Set.
+  763  EUtranCellFDD=TLAB07X5F1C                                     1                    >>> Set.
+  865  EUtranCellFDD=TLAB07X71F1A                                    1                    >>> Set.
+  967  EUtranCellFDD=TLAB07X7F1A                                     1                    >>> Set.
+ 1068  EUtranCellFDD=TLAB07X7F1C                                     1                    >>> Set.
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     1                    >>> Set.
+ 1271  EUtranCellFDD=TLAB07X7F1F                                     1                    >>> Set.
+ 1506  NbIotCell=TLAB07X12F1A                                        1                    >>> Set.
+ 1507  NbIotCell=TLAB07X4F1A                                         1                    >>> Set.
+ 1508  NbIotCell=TLAB07X4F1C                                         1                    >>> Set.
+ 2627  NRCellDU=TLAB07X2F2A                                          1                    >>> Set.
+ 2629  NRCellDU=TLAB07X4F1B                                          1                    >>> Set.
+ 2631  NRCellDU=TLAB07X4F1D                                          1                    >>> Set.
+ 2633  NRCellDU=TLAB07X4F2A                                          1                    >>> Set.
+ 2635  NRCellDU=TLAB07X4F2C                                          1                    >>> Set.
+ 2637  NRCellDU=TLAB07X5F1B                                          1                    >>> Set.
+ 2639  NRCellDU=TLAB07X5F1C                                          1                    >>> Set.
+ 2641  NRCellDU=TLAB07X71F1A                                         1                    >>> Set.
+ 2643  NRCellDU=TLAB07X78F1B                                         1                    >>> Set.
+ 2645  NRCellDU=TLAB07X78F1C                                         1                    >>> Set.
+ 2647  NRCellDU=TLAB07X7F1B                                          1                    >>> Set.
+ 2649  NRCellDU=TLAB07X7F1C                                          1                    >>> Set.
+ 2651  NRCellDU=TLAB07X7F1E                                          1                    >>> Set.
+ 2653  NRCellDU=TLAB07X7F1F                                          1                    >>> Set.
+============================================================================================================
+Total: 30 MOs attempted, 30 MOs set
+
+TLAB07X> deb TLAB07X7F1D
+
+240523-13:21:15 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/7435
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     1                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> get TLAB07X7F1D state
+
+240523-13:21:15 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/7435
+=================================================================================================================
+MO                                                      Attribute         Value
+=================================================================================================================
+EUtranCellFDD=TLAB07X12F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X2F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1B,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1C,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1D,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X5F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X5F1C,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X71F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1C,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1D                               administrativeState 1 (UNLOCKED)
+EUtranCellFDD=TLAB07X7F1D                               dlPowerState      1 (STABLE)
+EUtranCellFDD=TLAB07X7F1D                               operationalState  1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1F,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+SectorCarrier=TLAB07X7F1D                               operationalState  1 (ENABLED)
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D operationalState  1 (ENABLED)
+=================================================================================================================
+Total: 15 MOs
+
+
+TLAB07X> get TLAB07X7F1D arfcn|channelbandwidth|physicalLayerCellId$|configuredmaxtxpower
+
+240523-13:21:15 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/7435
+=================================================================================================================
+MO                                                      Attribute         Value
+=================================================================================================================
+EUtranCellFDD=TLAB07X7F1D                               dlChannelBandwidth 20000
+EUtranCellFDD=TLAB07X7F1D                               dlInternalChannelBandwidth 0
+EUtranCellFDD=TLAB07X7F1D                               earfcndl          3350
+EUtranCellFDD=TLAB07X7F1D                               earfcnul          21350
+EUtranCellFDD=TLAB07X7F1D                               physicalLayerCellId 74
+EUtranCellFDD=TLAB07X7F1D                               ulChannelBandwidth 20000
+EUtranCellFDD=TLAB07X7F1D                               ulInternalChannelBandwidth 0
+SectorCarrier=TLAB07X7F1D                               configuredMaxTxPower 500
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D dlChannelBandwidth 20000
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D earfcndl          3350
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D earfcnul          21350
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D physicalLayerCellId 74
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D ulChannelBandwidth 20000
+=================================================================================================================
+Total: 3 MOs
+
+
+TLAB07X> altk
+
+240523-13:21:15 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/7435
+
+Collecting Alarms...
+...
+====================================================================================================================
+Date & Time (UTC)   S Specific Problem                    MO (Cause/AdditionalInfo)
+====================================================================================================================
+2024-05-15 16:13:32 m Hatch Open                          FieldReplaceableUnit=BB-1 (Hatch cover open AI: ,UI:[{"PN":"Radio Processor 6353","SN":"E23D938601","PNR":"KDU1370095/11","PR":"R2A"}])
+2024-05-15 16:13:34 m SFP Not Present                     FieldReplaceableUnit=RRU-1-2,SfpModule=DATA_1 (No SFP or electrical cable plugged in (Mixed Mode with other ME).)
+2024-05-15 16:21:56 m External Link to GNodeB Failure     ENodeBFunction=1 (X2 link problem to one or several neighbouring gNodeBs. AI: PLMN ID-gNB ID 1 : 302720-3532361,PLMN ID-gNB ID 2 : 302720-3533751,PLMN ID-gNB ID 3 : 302720-3533750,PLMN ID-gNB ID 4 : 302720-3533749,PLMN ID-gNB ID 5 : 302720-3530156,PLMN ID-gNB ID 6 : 302720-3530152,PLMN ID-gNB ID 7 : 302720-3533748)
+2024-05-17 17:23:17 m EC Bus Unreliable Link              EcBus=1 (Possible reasons: two nodes configured as primary, HW unit misconfiguration or EC Bus contact error.)
+2024-05-21 17:03:37 M Synchronization Lost                FieldReplaceableUnit=AAS-8 (ClockSynchronisationProblem AI: UI:[{"PN":"AIR 6419 B78Y","SN":"EA8B289010","PNR":"KRD 901 242/11","PR":"R1B"}])
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X12F1A (Maximum Cell Range is deactivated AI: P:31->35)
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X5F1A (Maximum Cell Range is deactivated)
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X5F1C (Maximum Cell Range is deactivated)
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X71F1A (Maximum Cell Range is deactivated)
+2024-05-22 00:09:47 M Service Unavailable                 NbIotCell=TLAB07X12F1A (This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm. AI: S:35->31)
+2024-05-22 00:09:50 M Resource Configuration Failure      EUtranCellFDD=TLAB07X4F1A (Carrier freq 1720000 out of band. AI: P:36->37)
+2024-05-22 00:09:50 M Service Unavailable                 NbIotCell=TLAB07X4F1A (This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm. AI: S:37->36)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X4F1B (ESS partner cell state is not ACTIVE.)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X4F1D (ESS partner cell state is not ACTIVE.)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X7F1C (ESS partner cell state is not ACTIVE.)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X7F1F (ESS partner cell state is not ACTIVE.)
+>>> Total: 16 Alarms (0 Critical, 12 Major)
+
+TLAB07X> bl TLAB07X7F1D
+
+240523-13:21:16 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/7435
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     0                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> setm EUtranCellFDD puschPwrOffset256qam 8 ul256QamEnabled true
+
+240523-13:21:16 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/7435
+
+============================================================================================================
+   Id  MO                    puschPwrOffset256qam,ul256qamEnabled                                   Result
+============================================================================================================
+   46  EUtranCellFDD=TLAB07X12F1A               8 true  >>> Set.
+  148  EUtranCellFDD=TLAB07X2F1A               8 true  >>> Set.
+  252  EUtranCellFDD=TLAB07X4F1A               8 true  >>> Set.
+  355  EUtranCellFDD=TLAB07X4F1B               8 true  >>> Set.
+  457  EUtranCellFDD=TLAB07X4F1C               8 true  >>> Set.
+  559  EUtranCellFDD=TLAB07X4F1D               8 true  >>> Set.
+  661  EUtranCellFDD=TLAB07X5F1A               8 true  >>> Set.
+  763  EUtranCellFDD=TLAB07X5F1C               8 true  >>> Set.
+  865  EUtranCellFDD=TLAB07X71F1A               8 true  >>> Set.
+  967  EUtranCellFDD=TLAB07X7F1A               8 true  >>> Set.
+ 1068  EUtranCellFDD=TLAB07X7F1C               8 true  >>> Set.
+ 1169  EUtranCellFDD=TLAB07X7F1D               8 true  >>> Set.
+ 1271  EUtranCellFDD=TLAB07X7F1F               8 true  >>> Set.
+============================================================================================================
+Total: 13 MOs attempted, 13 MOs set
+
+TLAB07X> setm TLAB07X7F1D dlChannelBandwidth 20000 ulChannelBandwidth 20000
+
+240523-13:21:16 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/7435
+
+============================================================================================================
+   Id  MO                    dlChannelBandwidth,ulChannelBandwidth                                  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D          20000 20000  >>> Set.
+ 2054  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D  20000 ulChannelBandwidth 20000  !!!! Attribute ExternalEUtranCell::dlChannelBandwidth is readOnly.
+============================================================================================================
+Total: 2 MOs attempted, 1 MOs set
+
+TLAB07X> deb TLAB07X7F1D
+
+240523-13:21:16 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/7435
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     1                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> q!!
+Bye...
+]0; 
+
+2024-05-23 13:23:50,552 - INFO - original input command:bl TLAB07X7F1D;setm TLAB07X7F1D dlChannelBandwidth 10000 ulChannelBandwidth 10000;deb TLAB07X7F1D
+2024-05-23 13:23:50,552 - INFO - final command:moshell 169.254.2.2 "uv com_usernames=rbs;uv com_passwords=rbs;lt all;st cell;deb cell;bl TLAB07X7F1D;setm TLAB07X7F1D dlChannelBandwidth 10000 ulChannelBandwidth 10000;deb TLAB07X7F1D"
+2024-05-23 13:24:03,373 - INFO - Command execution successfully!
+2024-05-23 13:24:03,373 - INFO - =======================Command execution result======================
+2024-05-23 13:24:03,373 - INFO - 
+#####################################################################
+#            Welcome to MoShell 22.0u (LPA108514/1_R22U)            #
+#                Finn Magnusson, Jan Pettersson                     #
+#           http://newtran01.au.ao.ericsson.se/moshell              #
+#            Contact: Finn.Magnusson@ericsson.com                   #
+#                     Patrik.Ek@ericsson.com                        #
+#####################################################################
+      Copyright (c) Ericsson AB 2001-2022 - All Rights Reserved      
+
+[1;31mWARNING: [0mthe moshell version currently running is more than 83 weeks old.
+It is recommended to always use the latest released moshell version.
+Please download the latest version from http://newtran01.au.ao.ericsson.se/moshell
+
+Checking ip contact...OK
+
+HELP MENU            : h
+BASIC MO COMMANDS    : m
+OTHER MO COMMANDS    : n
+OTHER COMMANDS       : o
+PM COMMANDS          : p
+QUIT                 : q
+
+169.254.2.2> uv com_usernames=rbs
+
+com_usernames=rbs
+
+169.254.2.2> uv com_passwords=rbs
+
+com_passwords=rbs
+
+169.254.2.2> lt all
+
+240523-13:23:55 169.254.2.2 22.0u  stopfile=/tmp/8926
+Trying rbs's password from uservariable com_passwords ...OK
+
+$ssh_pid = 8981
+
+Connected to 169.254.2.2 (SubNetwork=ONRM_ROOT_MO,SubNetwork=Lab,MeContext=TLAB07X,ManagedElement=TLAB07X)
+
+Checking MOM version...MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be
+Parsing MOM (cached): /home/rantechdev/moshell_logfiles/logs_moshell/tempfiles/20240523-132355_8890/MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be.xml.cache.gz .................................................................................................................................................................................................................Done.
+Using paramfile /home/rantechdev/moshell/commonjars/pm/PARAM_MSRBS_22.Q3.txt
+Parsing file /home/rantechdev/moshell/commonjars/pm/PARAM_MSRBS_22.Q3.txt ..............................................................................Done.
+Using imomdfile /home/rantechdev/moshell/commonjars/pm/IMOMD_MSRBS_21.Q3.txt
+Using imomfile /home/rantechdev/moshell/commonjars/pm/IMOM_MSRBS_21.Q3.txt
+Connected to 169.254.2.2 (SubNetwork=ONRM_ROOT_MO,SubNetwork=Lab,MeContext=TLAB07X,ManagedElement=TLAB07X)
+
+Last MO: 17553. Loaded 17553 MOs. Total: 17554 MOs.
+
+TLAB07X> st cell
+
+240523-13:24:01 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/8926
+===================================================================================
+Proxy  Adm State     Op. State     MO
+===================================================================================
+   46  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X12F1A
+  148  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellFDD=TLAB07X2F1A
+  252  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X4F1A
+  355  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X4F1B
+  457  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X4F1C
+  559  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X4F1D
+  661  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X5F1A
+  763  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X5F1C
+  865  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X71F1A
+  967  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X7F1A
+ 1068  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X7F1C
+ 1169  1 (UNLOCKED)  1 (ENABLED)   ENodeBFunction=1,EUtranCellFDD=TLAB07X7F1D
+ 1271  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,EUtranCellFDD=TLAB07X7F1F
+ 1506  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,NbIotCell=TLAB07X12F1A
+ 1507  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,NbIotCell=TLAB07X4F1A
+ 1508  1 (UNLOCKED)  0 (DISABLED)  ENodeBFunction=1,NbIotCell=TLAB07X4F1C
+ 2043                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X12F1A
+ 2044                1 (ENABLED)   GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X2F1A
+ 2045                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X4F1A
+ 2046                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X4F1B
+ 2047                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X4F1C
+ 2048                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X4F1D
+ 2049                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X5F1A
+ 2050                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X5F1C
+ 2051                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X71F1A
+ 2052                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1A
+ 2053                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1C
+ 2054                1 (ENABLED)   GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D
+ 2055                0 (DISABLED)  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1F
+ 2627  1 (UNLOCKED)  1 (ENABLED)   GNBDUFunction=1,NRCellDU=TLAB07X2F2A
+ 2629  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X4F1B
+ 2631  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X4F1D
+ 2633  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X4F2A
+ 2635  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X4F2C
+ 2637  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X5F1B
+ 2639  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X5F1C
+ 2641  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X71F1A
+ 2643  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X78F1B
+ 2645  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X78F1C
+ 2647  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X7F1B
+ 2649  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X7F1C
+ 2651  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X7F1E
+ 2653  1 (UNLOCKED)  0 (DISABLED)  GNBDUFunction=1,NRCellDU=TLAB07X7F1F
+===================================================================================
+Total: 43 MOs
+
+TLAB07X> deb cell
+
+240523-13:24:01 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/8926
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+
+$netconf_pid = 9043
+
+   46  EUtranCellFDD=TLAB07X12F1A                                    1                    >>> Set.
+  148  EUtranCellFDD=TLAB07X2F1A                                     1                    >>> Set.
+  252  EUtranCellFDD=TLAB07X4F1A                                     1                    >>> Set.
+  355  EUtranCellFDD=TLAB07X4F1B                                     1                    >>> Set.
+  457  EUtranCellFDD=TLAB07X4F1C                                     1                    >>> Set.
+  559  EUtranCellFDD=TLAB07X4F1D                                     1                    >>> Set.
+  661  EUtranCellFDD=TLAB07X5F1A                                     1                    >>> Set.
+  763  EUtranCellFDD=TLAB07X5F1C                                     1                    >>> Set.
+  865  EUtranCellFDD=TLAB07X71F1A                                    1                    >>> Set.
+  967  EUtranCellFDD=TLAB07X7F1A                                     1                    >>> Set.
+ 1068  EUtranCellFDD=TLAB07X7F1C                                     1                    >>> Set.
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     1                    >>> Set.
+ 1271  EUtranCellFDD=TLAB07X7F1F                                     1                    >>> Set.
+ 1506  NbIotCell=TLAB07X12F1A                                        1                    >>> Set.
+ 1507  NbIotCell=TLAB07X4F1A                                         1                    >>> Set.
+ 1508  NbIotCell=TLAB07X4F1C                                         1                    >>> Set.
+ 2627  NRCellDU=TLAB07X2F2A                                          1                    >>> Set.
+ 2629  NRCellDU=TLAB07X4F1B                                          1                    >>> Set.
+ 2631  NRCellDU=TLAB07X4F1D                                          1                    >>> Set.
+ 2633  NRCellDU=TLAB07X4F2A                                          1                    >>> Set.
+ 2635  NRCellDU=TLAB07X4F2C                                          1                    >>> Set.
+ 2637  NRCellDU=TLAB07X5F1B                                          1                    >>> Set.
+ 2639  NRCellDU=TLAB07X5F1C                                          1                    >>> Set.
+ 2641  NRCellDU=TLAB07X71F1A                                         1                    >>> Set.
+ 2643  NRCellDU=TLAB07X78F1B                                         1                    >>> Set.
+ 2645  NRCellDU=TLAB07X78F1C                                         1                    >>> Set.
+ 2647  NRCellDU=TLAB07X7F1B                                          1                    >>> Set.
+ 2649  NRCellDU=TLAB07X7F1C                                          1                    >>> Set.
+ 2651  NRCellDU=TLAB07X7F1E                                          1                    >>> Set.
+ 2653  NRCellDU=TLAB07X7F1F                                          1                    >>> Set.
+============================================================================================================
+Total: 30 MOs attempted, 30 MOs set
+
+TLAB07X> bl TLAB07X7F1D
+
+240523-13:24:02 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/8926
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     0                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> setm TLAB07X7F1D dlChannelBandwidth 10000 ulChannelBandwidth 10000
+
+240523-13:24:02 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/8926
+
+============================================================================================================
+   Id  MO                    dlChannelBandwidth,ulChannelBandwidth                                  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D          10000 10000  >>> Set.
+ 2054  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D  10000 ulChannelBandwidth 10000  !!!! Attribute ExternalEUtranCell::dlChannelBandwidth is readOnly.
+============================================================================================================
+Total: 2 MOs attempted, 1 MOs set
+
+TLAB07X> deb TLAB07X7F1D
+
+240523-13:24:03 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/8926
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     1                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> q!!
+Bye...
+]0; 
+
