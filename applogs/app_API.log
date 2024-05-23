@@ -50,3 +50,16 @@
 2024-05-23 06:37:04,818 INFO: 127.0.0.1 - - [23/May/2024 06:37:04] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
 2024-05-23 06:37:04,818 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
 2024-05-23 06:37:04,820 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]
+2024-05-23 06:37:08,571 INFO: Sync to Github successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:101]
+2024-05-23 06:37:08,572 INFO: 127.0.0.1 - - [23/May/2024 06:37:08] "POST /yaml HTTP/HTTP/1.1" 200 - [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:45]
+2024-05-23 07:16:48,445 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.21.61.205:4000 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:16:48,445 INFO: [33mPress CTRL+C to quit[0m [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:16:48,445 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:16:48,517 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:16:48,518 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:17:22,717 INFO: 127.0.0.1 - - [23/May/2024 07:17:22] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
+2024-05-23 07:17:22,717 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
+2024-05-23 07:17:22,719 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]

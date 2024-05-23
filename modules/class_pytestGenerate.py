@@ -62,6 +62,7 @@ def test_step2_close_TMA(TMA_API):
     assert result1==200
 
 def test_step3_open_TMA(TMA_API):
+    time.sleep(10)
     result1,result2=TMA_API.open_TMA()
     print(result1,result2)
     assert result1==201
