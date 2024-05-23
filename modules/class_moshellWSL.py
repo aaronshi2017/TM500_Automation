@@ -9,6 +9,7 @@ from logging.handlers import TimedRotatingFileHandler
 class class_moshellWSL:
     default_command = 'moshell 169.254.2.2 "uv com_usernames=rbs;uv com_passwords=rbs;lt all;st cell;deb cell;"'
     output = "No command output"
+    testcampaign=""
 
     def __init__(self):
         print("************** Moshell Command Execution *****************")
@@ -65,30 +66,23 @@ class class_moshellWSL:
         
         # if self.output:
         #     # Generate json data to store the output
-        #     data = {
-        #         "command": command,
-        #         "output": self.output
-        #     }
+        #     # data = {
+        #     #     "command": command,
+        #     #     "output": self.output
+        #     # }
 
-            # # Get current timestamp
-            # timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        #     # Get current timestamp
+        #     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
-            # # Specify the file paths with timestamp
-            # output_dir = os.path.join("output", "json")
-            # os.makedirs(output_dir, exist_ok=True)  # Create directory if it doesn't exist
-            # file_path_json = os.path.join(output_dir, f"{timestamp}.json")
+        #     file_path_txt = os.path.join(output_folder, f"{self.testcampaign}_{timestamp}.txt")
 
-            # output_dir = os.path.join("output", "output_txt")
-            # os.makedirs(output_dir, exist_ok=True)  # Create directory if it doesn't exist
-            # file_path_txt = os.path.join(output_dir, f"{timestamp}.txt")
+        #     # # Write data to JSON file
+        #     # with open(file_path_json, "w") as json_file:
+        #     #     json.dump(data, json_file, indent=4)  # indent parameter for pretty formatting
 
-            # # Write data to JSON file
-            # with open(file_path_json, "w") as json_file:
-            #     json.dump(data, json_file, indent=4)  # indent parameter for pretty formatting
-
-            # # Write output to text file
-            # with open(file_path_txt, "w") as text_file:
-            #     text_file.write(self.output)
+        #     # Write output to text file
+        #     with open(file_path_txt, "w") as text_file:
+        #         text_file.write(self.output)
         
         return self.output
 

@@ -232,3 +232,57 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 2024-05-23 07:17:25,731 - INFO - Staging all changes...
+2024-05-23 07:17:25,737 - INFO - Command: git add .
+2024-05-23 07:17:25,737 - INFO - Output: 
+2024-05-23 07:17:25,737 - INFO - Committing changes...
+2024-05-23 07:17:25,743 - INFO - Command: git commit -m "Commit by Yaml"
+2024-05-23 07:17:25,743 - INFO - Output: [featurebranch 5294e25] Commit by Yaml
+ 16 files changed, 3582 insertions(+)
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest_1_2024-05-23_06-37-05.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest_2_2024-05-23_06-37-06.cpython-310-pytest-8.2.0.pyc
+ create mode 100644 Project/__pycache__/test_NPI_PilotTest_3_2024-05-23_06-37-07.cpython-310-pytest-8.2.0.pyc
+ rename Project/{test_NPI_PilotTest_1_2024-05-23_06-37-05.py => archived_test_NPI_PilotTest_1_2024-05-23_06-37-05.py} (99%)
+ rename Project/{test_NPI_PilotTest_2_2024-05-23_06-37-06.py => archived_test_NPI_PilotTest_2_2024-05-23_06-37-06.py} (100%)
+ rename Project/{test_NPI_PilotTest_3_2024-05-23_06-37-07.py => archived_test_NPI_PilotTest_3_2024-05-23_06-37-07.py} (100%)
+ create mode 100644 Project/test_NPI_PilotTest_1_2024-05-23_07-17-23.py
+ create mode 100644 Project/test_NPI_PilotTest_2_2024-05-23_07-17-24.py
+ create mode 100644 Project/test_NPI_PilotTest_3_2024-05-23_07-17-25.py
+ create mode 100755 YAML/archive_2024-05-23_07-17-22_NPI_PilotTest.yaml
+2024-05-23 07:17:25,743 - INFO - Pushing changes to remote...
+2024-05-23 07:17:26,463 - INFO - Command: git push -u origin featurebranch
+2024-05-23 07:17:26,463 - INFO - Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
+2024-05-23 07:17:26,463 - INFO - Remote repository is now in sync with local.
+2024-05-23 07:17:26,464 - INFO - 127.0.0.1 - - [23/May/2024 07:17:26] "POST /yaml HTTP/1.1" 200 -
+2024-05-23 07:39:36,335 - INFO -  * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_moshellWSL.py', reloading
+2024-05-23 13:20:16,166 - INFO - Starting sync process
+2024-05-23 13:20:16,168 - INFO - Command: git status
+2024-05-23 13:20:16,168 - INFO - Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/test_NPI_PilotTest_1_2024-05-23_07-17-23.py
+	deleted:    Project/test_NPI_PilotTest_2_2024-05-23_07-17-24.py
+	deleted:    Project/test_NPI_PilotTest_3_2024-05-23_07-17-25.py
+	modified:   applogs/app_API.log
+	modified:   modules/__pycache__/class_moshellWSL.cpython-310.pyc
+	modified:   modules/__pycache__/class_pytestGenerate.cpython-310.pyc
+	modified:   modules/class_moshellWSL.py
+	modified:   output/github/github_commands.log
+	modified:   output/moshell/moshell_commands.log
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Project/__pycache__/test_NPI_PilotTest_1_2024-05-23_07-17-23.cpython-310-pytest-8.2.0.pyc
+	Project/__pycache__/test_NPI_PilotTest_2_2024-05-23_07-17-24.cpython-310-pytest-8.2.0.pyc
+	Project/__pycache__/test_NPI_PilotTest_3_2024-05-23_07-17-25.cpython-310-pytest-8.2.0.pyc
+	Project/archived_test_NPI_PilotTest_1_2024-05-23_07-17-23.py
+	Project/archived_test_NPI_PilotTest_2_2024-05-23_07-17-24.py
+	Project/archived_test_NPI_PilotTest_3_2024-05-23_07-17-25.py
+	Project/test_NPI_PilotTest_1_2024-05-23_13-20-15.py
+	Project/test_NPI_PilotTest_2_2024-05-23_13-20-16.py
+	YAML/archive_2024-05-23_13-20-14_NPI_PilotTest_1.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2024-05-23 13:20:16,168 - INFO - Staging all changes...
