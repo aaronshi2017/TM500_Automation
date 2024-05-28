@@ -1,0 +1,306 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.21.61.205:4000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 650-740-917
+ * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/app.py', reloading
+2024-05-23 06:16:36,719 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.21.61.205:4000 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:16:36,719 INFO: [33mPress CTRL+C to quit[0m [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:16:36,719 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:16:36,793 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:16:36,793 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:17:02,745 INFO: 127.0.0.1 - - [23/May/2024 06:17:02] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
+2024-05-23 06:17:02,745 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
+2024-05-23 06:17:02,748 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]
+2024-05-23 06:17:03,761 INFO: 127.0.0.1 - - [23/May/2024 06:17:03] "[35m[1mPOST /yaml HTTP/1.1[0m" 500 - [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:17:40,668 INFO:  * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_pytestGenerate.py', reloading [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:17:40,681 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:18:14,314 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.21.61.205:4000 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:18:14,314 INFO: [33mPress CTRL+C to quit[0m [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:18:14,315 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:18:14,389 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:18:14,389 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:18:21,929 INFO: 127.0.0.1 - - [23/May/2024 06:18:21] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
+2024-05-23 06:18:21,929 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
+2024-05-23 06:18:21,932 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]
+2024-05-23 06:18:25,672 INFO: Sync to Github successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:101]
+2024-05-23 06:18:25,672 INFO: 127.0.0.1 - - [23/May/2024 06:18:25] "POST /yaml HTTP/HTTP/1.1" 200 - [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:45]
+2024-05-23 06:21:33,289 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:21:33,362 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:21:33,362 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:22:09,884 INFO:  * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_moshellWSL.py', reloading [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:22:09,897 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:00,666 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.21.61.205:4000 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:00,667 INFO: [33mPress CTRL+C to quit[0m [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:00,667 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:00,740 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:00,741 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 06:37:04,818 INFO: 127.0.0.1 - - [23/May/2024 06:37:04] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
+2024-05-23 06:37:04,818 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
+2024-05-23 06:37:04,820 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]
+2024-05-23 06:37:08,571 INFO: Sync to Github successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:101]
+2024-05-23 06:37:08,572 INFO: 127.0.0.1 - - [23/May/2024 06:37:08] "POST /yaml HTTP/HTTP/1.1" 200 - [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:45]
+2024-05-23 07:16:48,445 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.21.61.205:4000 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:16:48,445 INFO: [33mPress CTRL+C to quit[0m [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:16:48,445 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:16:48,517 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:16:48,518 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:17:22,717 INFO: 127.0.0.1 - - [23/May/2024 07:17:22] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
+2024-05-23 07:17:22,717 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
+2024-05-23 07:17:22,719 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]
+2024-05-23 07:17:26,463 INFO: Sync to Github successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:101]
+2024-05-23 07:17:26,464 INFO: 127.0.0.1 - - [23/May/2024 07:17:26] "POST /yaml HTTP/HTTP/1.1" 200 - [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:45]
+2024-05-23 07:39:36,350 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:39:36,421 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:39:36,422 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:39:47,620 INFO:  * Detected change in '/home/rantechdev/TM500_Automation/TM500Automation/modules/class_moshellWSL.py', reloading [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:39:47,633 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:51:06,317 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.21.61.205:4000 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:51:06,317 INFO: [33mPress CTRL+C to quit[0m [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:51:06,318 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:51:06,395 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:51:06,395 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 07:51:09,360 INFO: 127.0.0.1 - - [23/May/2024 07:51:09] "POST /moshell HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
+2024-05-23 07:51:09,361 INFO: moshell deb TLAB07X7F1D;get TLAB07X7F1D state;get TLAB07X7F1D arfcn|channelbandwidth|physicalLayerCellId$|configuredmaxtxpower;altk;bl TLAB07X7F1D;setm EUtranCellFDD puschPwrOffset256qam 8 ul256QamEnabled true;setm TLAB07X7F1D dlChannelBandwidth 20000 ulChannelBandwidth 20000;deb TLAB07X7F1D [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:120]
+2024-05-23 07:51:09,361 INFO: ************** Moshell Command Execution ***************** [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:121]
+2024-05-23 07:51:18,270 INFO: Command execution successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/modules/class_moshellWSL.py:43]
+2024-05-23 07:51:18,270 INFO: 
+#####################################################################
+#            Welcome to MoShell 22.0u (LPA108514/1_R22U)            #
+#                Finn Magnusson, Jan Pettersson                     #
+#           http://newtran01.au.ao.ericsson.se/moshell              #
+#            Contact: Finn.Magnusson@ericsson.com                   #
+#                     Patrik.Ek@ericsson.com                        #
+#####################################################################
+      Copyright (c) Ericsson AB 2001-2022 - All Rights Reserved      
+
+[1;31mWARNING: [0mthe moshell version currently running is more than 83 weeks old.
+It is recommended to always use the latest released moshell version.
+Please download the latest version from http://newtran01.au.ao.ericsson.se/moshell
+
+Checking ip contact...OK
+
+HELP MENU            : h
+BASIC MO COMMANDS    : m
+OTHER MO COMMANDS    : n
+OTHER COMMANDS       : o
+PM COMMANDS          : p
+QUIT                 : q
+
+169.254.2.2> uv com_usernames=rbs
+
+com_usernames=rbs
+
+169.254.2.2> uv com_passwords=rbs
+
+com_passwords=rbs
+
+169.254.2.2> lt all
+
+240523-07:51:09 169.254.2.2 22.0u  stopfile=/tmp/65504
+Trying rbs's password from uservariable com_passwords ...OK
+
+$ssh_pid = 65554
+
+Connected to 169.254.2.2 (SubNetwork=ONRM_ROOT_MO,SubNetwork=Lab,MeContext=TLAB07X,ManagedElement=TLAB07X)
+
+Checking MOM version...MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be
+Parsing MOM (cached): /home/rantechdev/moshell_logfiles/logs_moshell/tempfiles/20240523-075109_65469/MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be.xml.cache.gz .................................................................................................................................................................................................................Done.
+Using paramfile /home/rantechdev/moshell/commonjars/pm/PARAM_MSRBS_22.Q3.txt
+Parsing file /home/rantechdev/moshell/commonjars/pm/PARAM_MSRBS_22.Q3.txt ..............................................................................Done.
+Using imomdfile /home/rantechdev/moshell/commonjars/pm/IMOMD_MSRBS_21.Q3.txt
+Using imomfile /home/rantechdev/moshell/commonjars/pm/IMOM_MSRBS_21.Q3.txt
+Connected to 169.254.2.2 (SubNetwork=ONRM_ROOT_MO,SubNetwork=Lab,MeContext=TLAB07X,ManagedElement=TLAB07X)
+
+Last MO: 17553. Loaded 17553 MOs. Total: 17554 MOs.
+
+TLAB07X> deb TLAB07X7F1D
+
+240523-07:51:16 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/65504
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+
+$netconf_pid = 65665
+
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     1                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> get TLAB07X7F1D state
+
+240523-07:51:16 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/65504
+=================================================================================================================
+MO                                                      Attribute         Value
+=================================================================================================================
+EUtranCellFDD=TLAB07X12F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X2F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1B,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1C,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X4F1D,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X5F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X5F1C,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X71F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1A,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1C,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1D                               administrativeState 1 (UNLOCKED)
+EUtranCellFDD=TLAB07X7F1D                               dlPowerState      1 (STABLE)
+EUtranCellFDD=TLAB07X7F1D                               operationalState  1 (ENABLED)
+EUtranCellFDD=TLAB07X7F1F,EUtranFreqRelation=3350,EUtranCellRelation=TLAB07X7F1D amoState          1 (ENABLED)
+SectorCarrier=TLAB07X7F1D                               operationalState  1 (ENABLED)
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D operationalState  1 (ENABLED)
+=================================================================================================================
+Total: 15 MOs
+
+
+TLAB07X> get TLAB07X7F1D arfcn|channelbandwidth|physicalLayerCellId$|configuredmaxtxpower
+
+240523-07:51:17 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/65504
+=================================================================================================================
+MO                                                      Attribute         Value
+=================================================================================================================
+EUtranCellFDD=TLAB07X7F1D                               dlChannelBandwidth 15000
+EUtranCellFDD=TLAB07X7F1D                               dlInternalChannelBandwidth 0
+EUtranCellFDD=TLAB07X7F1D                               earfcndl          3350
+EUtranCellFDD=TLAB07X7F1D                               earfcnul          21350
+EUtranCellFDD=TLAB07X7F1D                               physicalLayerCellId 74
+EUtranCellFDD=TLAB07X7F1D                               ulChannelBandwidth 15000
+EUtranCellFDD=TLAB07X7F1D                               ulInternalChannelBandwidth 0
+SectorCarrier=TLAB07X7F1D                               configuredMaxTxPower 500
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D dlChannelBandwidth 15000
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D earfcndl          3350
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D earfcnul          21350
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D physicalLayerCellId 74
+GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D ulChannelBandwidth 15000
+=================================================================================================================
+Total: 3 MOs
+
+
+TLAB07X> altk
+
+240523-07:51:17 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/65504
+
+Collecting Alarms...
+...
+====================================================================================================================
+Date & Time (UTC)   S Specific Problem                    MO (Cause/AdditionalInfo)
+====================================================================================================================
+2024-05-15 16:13:32 m Hatch Open                          FieldReplaceableUnit=BB-1 (Hatch cover open AI: ,UI:[{"PN":"Radio Processor 6353","SN":"E23D938601","PNR":"KDU1370095/11","PR":"R2A"}])
+2024-05-15 16:13:34 m SFP Not Present                     FieldReplaceableUnit=RRU-1-2,SfpModule=DATA_1 (No SFP or electrical cable plugged in (Mixed Mode with other ME).)
+2024-05-15 16:21:56 m External Link to GNodeB Failure     ENodeBFunction=1 (X2 link problem to one or several neighbouring gNodeBs. AI: PLMN ID-gNB ID 1 : 302720-3532361,PLMN ID-gNB ID 2 : 302720-3533751,PLMN ID-gNB ID 3 : 302720-3533750,PLMN ID-gNB ID 4 : 302720-3533749,PLMN ID-gNB ID 5 : 302720-3530156,PLMN ID-gNB ID 6 : 302720-3530152,PLMN ID-gNB ID 7 : 302720-3533748)
+2024-05-17 17:23:17 m EC Bus Unreliable Link              EcBus=1 (Possible reasons: two nodes configured as primary, HW unit misconfiguration or EC Bus contact error.)
+2024-05-21 17:03:37 M Synchronization Lost                FieldReplaceableUnit=AAS-8 (ClockSynchronisationProblem AI: UI:[{"PN":"AIR 6419 B78Y","SN":"EA8B289010","PNR":"KRD 901 242/11","PR":"R1B"}])
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X12F1A (Maximum Cell Range is deactivated AI: P:31->35)
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X5F1A (Maximum Cell Range is deactivated)
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X5F1C (Maximum Cell Range is deactivated)
+2024-05-22 00:09:47 M Configuration Requires Feature Activation EUtranCellFDD=TLAB07X71F1A (Maximum Cell Range is deactivated)
+2024-05-22 00:09:47 M Service Unavailable                 NbIotCell=TLAB07X12F1A (This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm. AI: S:35->31)
+2024-05-22 00:09:50 M Resource Configuration Failure      EUtranCellFDD=TLAB07X4F1A (Carrier freq 1720000 out of band. AI: P:36->37)
+2024-05-22 00:09:50 M Service Unavailable                 NbIotCell=TLAB07X4F1A (This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm. AI: S:37->36)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X4F1B (ESS partner cell state is not ACTIVE.)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X4F1D (ESS partner cell state is not ACTIVE.)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X7F1C (ESS partner cell state is not ACTIVE.)
+2024-05-22 00:10:12 M ESS Service Unavailable             EUtranCellFDD=TLAB07X7F1F (ESS partner cell state is not ACTIVE.)
+>>> Total: 16 Alarms (0 Critical, 12 Major)
+
+TLAB07X> bl TLAB07X7F1D
+
+240523-07:51:17 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/65504
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     0                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> setm EUtranCellFDD puschPwrOffset256qam 8 ul256QamEnabled true
+
+240523-07:51:17 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/65504
+
+============================================================================================================
+   Id  MO                    puschPwrOffset256qam,ul256qamEnabled                                   Result
+============================================================================================================
+   46  EUtranCellFDD=TLAB07X12F1A               8 true  >>> Set.
+  148  EUtranCellFDD=TLAB07X2F1A               8 true  >>> Set.
+  252  EUtranCellFDD=TLAB07X4F1A               8 true  >>> Set.
+  355  EUtranCellFDD=TLAB07X4F1B               8 true  >>> Set.
+  457  EUtranCellFDD=TLAB07X4F1C               8 true  >>> Set.
+  559  EUtranCellFDD=TLAB07X4F1D               8 true  >>> Set.
+  661  EUtranCellFDD=TLAB07X5F1A               8 true  >>> Set.
+  763  EUtranCellFDD=TLAB07X5F1C               8 true  >>> Set.
+  865  EUtranCellFDD=TLAB07X71F1A               8 true  >>> Set.
+  967  EUtranCellFDD=TLAB07X7F1A               8 true  >>> Set.
+ 1068  EUtranCellFDD=TLAB07X7F1C               8 true  >>> Set.
+ 1169  EUtranCellFDD=TLAB07X7F1D               8 true  >>> Set.
+ 1271  EUtranCellFDD=TLAB07X7F1F               8 true  >>> Set.
+============================================================================================================
+Total: 13 MOs attempted, 13 MOs set
+
+TLAB07X> setm TLAB07X7F1D dlChannelBandwidth 20000 ulChannelBandwidth 20000
+
+240523-07:51:18 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/65504
+
+============================================================================================================
+   Id  MO                    dlChannelBandwidth,ulChannelBandwidth                                  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D          20000 20000  >>> Set.
+ 2054  GNBCUCPFunction=1,EUtraNetwork=1,ExternalENodeBFunction=auto302_720_3_41062,ExternalEUtranCell=TLAB07X7F1D  20000 ulChannelBandwidth 20000  !!!! Attribute ExternalEUtranCell::dlChannelBandwidth is readOnly.
+============================================================================================================
+Total: 2 MOs attempted, 1 MOs set
+
+TLAB07X> deb TLAB07X7F1D
+
+240523-07:51:18 169.254.2.2 22.0u MSRBS_NODE_MODEL_24.Q1_651.28230.122_e9be stopfile=/tmp/65504
+
+============================================================================================================
+  Id   MO                                                            administrativeState  Result
+============================================================================================================
+ 1169  EUtranCellFDD=TLAB07X7F1D                                     1                    >>> Set.
+============================================================================================================
+Total: 1 MOs attempted, 1 MOs set
+
+TLAB07X> q!!
+Bye...
+]0; 
+ [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:129]
+2024-05-23 07:51:18,270 INFO: 127.0.0.1 - - [23/May/2024 07:51:18] "POST /moshell HTTP/HTTP/1.1" 200 - [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:45]
+2024-05-23 07:51:18,271 INFO: 127.0.0.1 - - [23/May/2024 07:51:18] "POST /moshell HTTP/1.1" 200 - [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 13:18:55,559 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://172.21.61.205:4000 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 13:18:55,559 INFO: [33mPress CTRL+C to quit[0m [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 13:18:55,560 INFO:  * Restarting with stat [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 13:18:55,635 WARNING:  * Debugger is active! [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 13:18:55,637 INFO:  * Debugger PIN: 900-850-890 [in /home/rantechdev/.local/lib/python3.10/site-packages/werkzeug/_internal.py:97]
+2024-05-23 13:20:14,149 INFO: 127.0.0.1 - - [23/May/2024 13:20:14] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
+2024-05-23 13:20:14,150 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest_1.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
+2024-05-23 13:20:14,152 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]
+2024-05-23 13:20:16,951 INFO: Sync to Github successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:101]
+2024-05-23 13:20:16,951 INFO: 127.0.0.1 - - [23/May/2024 13:20:16] "POST /yaml HTTP/HTTP/1.1" 200 - [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:45]
+2024-05-23 14:47:48,609 INFO: 127.0.0.1 - - [23/May/2024 14:47:48] "POST /yaml HTTP/HTTP/1.1" [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:41]
+2024-05-23 14:47:48,609 INFO: Yaml test case files: {'Yaml': 'D:\\rApps\\datasets\\TM500\\06_NPI_Projects\\2024_01_NPI_PilotTest\\00_configfiles\\NPI_PilotTest_1.yaml'} [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:84]
+2024-05-23 14:47:48,611 INFO: Read YAML file successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:71]
+2024-05-23 14:47:51,384 INFO: Sync to Github successfully! [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:101]
+2024-05-23 14:47:51,384 INFO: 127.0.0.1 - - [23/May/2024 14:47:51] "POST /yaml HTTP/HTTP/1.1" 200 - [in /home/rantechdev/TM500_Automation/TM500Automation/app.py:45]
