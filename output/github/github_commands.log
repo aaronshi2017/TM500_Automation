@@ -26,3 +26,47 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 2024-05-29 09:06:49,014 - INFO - Staging all changes...
+2024-05-29 09:06:49,016 - INFO - Command: git add .
+2024-05-29 09:06:49,017 - INFO - Output: 
+2024-05-29 09:06:49,017 - INFO - Committing changes...
+2024-05-29 09:06:49,023 - INFO - Command: git commit -m "Commit by Yaml"
+2024-05-29 09:06:49,023 - INFO - Output: [featurebranch 6a0bd10] Commit by Yaml
+ 11 files changed, 196 insertions(+), 5732 deletions(-)
+ rename Project/{test_NPI_PilotTest_1_2024-05-27_21-11-01.py => archived_test_NPI_PilotTest_1_2024-05-27_21-11-01.py} (100%)
+ rename Project/{test_NPI_PilotTest_2_2024-05-27_21-11-02.py => archived_test_NPI_PilotTest_2_2024-05-27_21-11-02.py} (100%)
+ rename Project/{test_NPI_PilotTest_3_2024-05-27_21-11-03.py => archived_test_NPI_PilotTest_3_2024-05-27_21-11-03.py} (100%)
+ create mode 100644 Project/test_NPI_PilotTest_1_2024-05-29_09-06-49.py
+ create mode 100755 YAML/archive_2024-05-29_09-06-48_NPI_PilotTest_2.yaml
+ rewrite applogs/app_API.log (69%)
+ create mode 100644 applogs/app_API.log.2024-05-27
+ rewrite output/github/github_commands.log (60%)
+ create mode 100644 output/github/github_commands.log.2024-05-27
+ rewrite output/moshell/moshell_commands.log (99%)
+ copy output/moshell/{moshell_commands.log => moshell_commands.log.2024-05-23} (100%)
+2024-05-29 09:06:49,023 - INFO - Pushing changes to remote...
+2024-05-29 09:06:49,766 - INFO - Command: git push -u origin featurebranch
+2024-05-29 09:06:49,767 - INFO - Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
+2024-05-29 09:06:49,767 - INFO - Remote repository is now in sync with local.
+2024-05-29 09:06:49,768 - INFO - 127.0.0.1 - - [29/May/2024 09:06:49] "POST /yaml HTTP/1.1" 200 -
+2024-05-29 09:21:27,504 - INFO - Starting sync process
+2024-05-29 09:21:27,506 - INFO - Command: git status
+2024-05-29 09:21:27,506 - INFO - Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/test_NPI_PilotTest_1_2024-05-29_09-06-49.py
+	modified:   applogs/app_API.log
+	modified:   output/github/github_commands.log
+	modified:   output/moshell/moshell_commands.log
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Project/archived_test_NPI_PilotTest_1_2024-05-29_09-06-49.py
+	Project/test_NPI_PilotTest_1_2024-05-29_09-21-27.py
+	YAML/archive_2024-05-29_09-21-26_NPI_PilotTest_2.yaml
+	output/moshell/moshell_commands.log.2024-05-27
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2024-05-29 09:21:27,506 - INFO - Staging all changes...
