@@ -1,0 +1,50 @@
+2024-05-27 21:11:03,955 - INFO - Starting sync process
+2024-05-27 21:11:03,958 - INFO - Command: git status
+2024-05-27 21:11:03,958 - INFO - Output: On branch featurebranch
+Your branch is up to date with 'origin/featurebranch'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Project/test_NPI_PilotTest_1_2024-05-23_14-47-49.py
+	deleted:    Project/test_NPI_PilotTest_2_2024-05-23_14-47-50.py
+	modified:   applogs/app_API.log
+	modified:   output/github/github_commands.log
+	modified:   output/moshell/moshell_commands.log
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Project/archived_test_NPI_PilotTest_1_2024-05-23_14-47-49.py
+	Project/archived_test_NPI_PilotTest_2_2024-05-23_14-47-50.py
+	Project/test_NPI_PilotTest_1_2024-05-27_21-11-01.py
+	Project/test_NPI_PilotTest_2_2024-05-27_21-11-02.py
+	Project/test_NPI_PilotTest_3_2024-05-27_21-11-03.py
+	YAML/archive_2024-05-27_21-11-00_NPI_PilotTest.yaml
+	applogs/app_API.log.2024-05-23
+	output/github/github_commands.log.2024-05-23
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2024-05-27 21:11:03,958 - INFO - Staging all changes...
+2024-05-27 21:11:03,965 - INFO - Command: git add .
+2024-05-27 21:11:03,965 - INFO - Output: 
+2024-05-27 21:11:03,965 - INFO - Committing changes...
+2024-05-27 21:11:03,976 - INFO - Command: git commit -m "Commit by Yaml"
+2024-05-27 21:11:03,976 - INFO - Output: [featurebranch a4bd42e] Commit by Yaml
+ 11 files changed, 813 insertions(+), 636 deletions(-)
+ rename Project/{test_NPI_PilotTest_1_2024-05-23_14-47-49.py => archived_test_NPI_PilotTest_1_2024-05-23_14-47-49.py} (100%)
+ rename Project/{test_NPI_PilotTest_2_2024-05-23_14-47-50.py => archived_test_NPI_PilotTest_2_2024-05-23_14-47-50.py} (100%)
+ create mode 100644 Project/test_NPI_PilotTest_1_2024-05-27_21-11-01.py
+ create mode 100644 Project/test_NPI_PilotTest_2_2024-05-27_21-11-02.py
+ create mode 100644 Project/test_NPI_PilotTest_3_2024-05-27_21-11-03.py
+ create mode 100755 YAML/archive_2024-05-27_21-11-00_NPI_PilotTest.yaml
+ rewrite applogs/app_API.log (99%)
+ copy applogs/{app_API.log => app_API.log.2024-05-23} (98%)
+ rewrite output/github/github_commands.log (97%)
+ copy output/github/{github_commands.log => github_commands.log.2024-05-23} (94%)
+2024-05-27 21:11:03,976 - INFO - Pushing changes to remote...
+2024-05-27 21:11:04,828 - INFO - Command: git push -u origin featurebranch
+2024-05-27 21:11:04,828 - INFO - Output: Branch 'featurebranch' set up to track remote branch 'featurebranch' from 'origin'.
+2024-05-27 21:11:04,828 - INFO - Remote repository is now in sync with local.
+2024-05-27 21:11:04,831 - INFO - 127.0.0.1 - - [27/May/2024 21:11:04] "POST /yaml HTTP/1.1" 200 -
+2024-05-27 21:28:54,817 - INFO - Command execution got error: Command 'moshell 169.254.2.2 "uv com_usernames=rbs;uv com_passwords=rbs;lt all;deb TLAB07X7F1D;get TLAB07X7F1D state;get TLAB07X7F1D arfcn|channelbandwidth|physicalLayerCellId$|configuredmaxtxpower;altk;bl TLAB07X7F1D;setm EUtranCellFDD puschPwrOffset256qam 8 ul256QamEnabled true;setm TLAB07X7F1D dlChannelBandwidth 20000 ulChannelBandwidth 20000;deb TLAB07X7F1D"' returned non-zero exit status 1.
+2024-05-27 21:28:54,817 - INFO - 127.0.0.1 - - [27/May/2024 21:28:54] "[31m[1mPOST /moshell HTTP/1.1[0m" 400 -

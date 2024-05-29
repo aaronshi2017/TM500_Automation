@@ -1,27 +1,28 @@
-2024-05-27 21:11:03,955 - INFO - Starting sync process
-2024-05-27 21:11:03,958 - INFO - Command: git status
-2024-05-27 21:11:03,958 - INFO - Output: On branch featurebranch
+2024-05-29 09:06:49,011 - INFO - Starting sync process
+2024-05-29 09:06:49,014 - INFO - Command: git status
+2024-05-29 09:06:49,014 - INFO - Output: On branch featurebranch
 Your branch is up to date with 'origin/featurebranch'.
 
 Changes not staged for commit:
   (use "git add/rm <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-	deleted:    Project/test_NPI_PilotTest_1_2024-05-23_14-47-49.py
-	deleted:    Project/test_NPI_PilotTest_2_2024-05-23_14-47-50.py
+	deleted:    Project/test_NPI_PilotTest_1_2024-05-27_21-11-01.py
+	deleted:    Project/test_NPI_PilotTest_2_2024-05-27_21-11-02.py
+	deleted:    Project/test_NPI_PilotTest_3_2024-05-27_21-11-03.py
 	modified:   applogs/app_API.log
 	modified:   output/github/github_commands.log
 	modified:   output/moshell/moshell_commands.log
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-	Project/archived_test_NPI_PilotTest_1_2024-05-23_14-47-49.py
-	Project/archived_test_NPI_PilotTest_2_2024-05-23_14-47-50.py
-	Project/test_NPI_PilotTest_1_2024-05-27_21-11-01.py
-	Project/test_NPI_PilotTest_2_2024-05-27_21-11-02.py
-	Project/test_NPI_PilotTest_3_2024-05-27_21-11-03.py
-	YAML/archive_2024-05-27_21-11-00_NPI_PilotTest.yaml
-	applogs/app_API.log.2024-05-23
-	output/github/github_commands.log.2024-05-23
+	Project/archived_test_NPI_PilotTest_1_2024-05-27_21-11-01.py
+	Project/archived_test_NPI_PilotTest_2_2024-05-27_21-11-02.py
+	Project/archived_test_NPI_PilotTest_3_2024-05-27_21-11-03.py
+	Project/test_NPI_PilotTest_1_2024-05-29_09-06-49.py
+	YAML/archive_2024-05-29_09-06-48_NPI_PilotTest_2.yaml
+	applogs/app_API.log.2024-05-27
+	output/github/github_commands.log.2024-05-27
+	output/moshell/moshell_commands.log.2024-05-23
 
 no changes added to commit (use "git add" and/or "git commit -a")
-2024-05-27 21:11:03,958 - INFO - Staging all changes...
+2024-05-29 09:06:49,014 - INFO - Staging all changes...
